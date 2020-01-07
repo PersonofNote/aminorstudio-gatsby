@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const MenuLinks = ( {links} ) => {
         return links.map(link => {
-                  return <span className="top-menu-item" key={link.index}><a className="top-menu-link" href={link.link}>{link.name}</a></span>
+                  return <span className="top-menu-item" key={link.index}><Link to={link.link} className="top-menu-link">{link.name}</Link></span>
               })
           
 };
