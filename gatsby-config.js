@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `A Minor Studio`,
-    description: `Personal Site for Jessica Martin`,
+    description: `Personal Site and Portfolio for Jessica Martin`,
     author: `@gatsbyjs`,
     logo: `src/images/logo.png`,
   },
