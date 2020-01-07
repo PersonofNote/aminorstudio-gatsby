@@ -620,3 +620,22 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.project-card {
+  border: 1px solid gray;
+}
+
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+.top-menu-item {
+  margin: 0 2rem;
+}
+
+.top-menu-link {
+  text-decoration: none;
+}
