@@ -6,16 +6,20 @@
  */
 
 import React from "react"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
 
-const Card = () => {
+class ProjectCard extends React.Component {
+    render(){
     return(
         <div className = "project-card">
-            <span> Project Placeholder</span>
-            <p> Lorem Ipsum Project</p>
+            <a href={this.props.link}>
+            <img src={this.props.image} className = "project-image"></img>
+            <h2> {this.props.title}</h2>
+            <p> {this.props.info}</p>
+            </a>
+            <div className="icon-tray">{this.props.icons}</div>
         </div>
     )
+    }
 }
 
-export default Card
+export default ProjectCard

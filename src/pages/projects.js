@@ -1,17 +1,56 @@
 import React from "react"
-import { Link } from "gatsby"
-import Card from "../components/ProjectCard"
+import ProjectSet from "../components/ProjectSet"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+/* Project template:
+ {
+    "title" : "New Project",
+    "image" : "",
+    "description":"",
+    "project-link":"",
+    "icons" : []
+  }
+
+*
+*/
+
+
+const ProjectsInfo = [
+  {
+    "title" : "Spacepost",
+    "image" : "",
+    "description":"Developed Spacepost’s branding (Spacedood logo, colors, typography) and landing pages",
+    "project-link":"http://www.spacepost.io/",
+    "icons" : [
+      "icon1", "icon2"
+    ]
+  },
+  {
+    "title" : "Huge Quest v0.1",
+    "image" : "",
+    "description":"Two player exploration game with randomly-generated maps: Find the other player (or a simple AI) and hug them.",
+    "project-link":"",
+    "icons" : []
+  },
+  {
+    "title" : "New Project",
+    "image" : "",
+    "description":"",
+    "project-link":"",
+    "icons" : []
+  }
+]
+
+
 const ProjectPage = () => (
   <Layout>
     <SEO title="Projects" />
-    <h1>This is the Projects Page</h1>
-    <p>Welcome to the Projects Placeholder Page</p>
-    <Card />
-    <Link to="/">Go back to the homepage</Link>
+    <h1>Projects Placeholder Page</h1>
+    <div className="projects-container">
+      <ProjectSet props={ProjectsInfo} />
+    </div>
   </Layout>
 )
 

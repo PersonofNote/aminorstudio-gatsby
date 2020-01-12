@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `A Minor Studio`,
     description: `Personal Site and Portfolio for Jessica Martin`,
-    author: `@gatsbyjs`,
+    author: `A Person of Note`,
     logo: `src/images/logo.png`,
   },
   plugins: [
@@ -19,12 +19,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `a-minor-studio`,
+        short_name: `aminorstudio`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
