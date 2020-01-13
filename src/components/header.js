@@ -5,10 +5,6 @@ import siteLogo from "../images/logo.png"
 
 const mainMenulinks = [
   {
-    "link": "/",
-    "name": "Home"
-  },
-  {
     "link": "/projects",
     "name": "Projects"
   },

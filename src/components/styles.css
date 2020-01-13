@@ -1,3 +1,14 @@
+/* Colors */
+
+:root {
+    --primary: #ffab45;
+    --primary-light: #ffe357;
+
+    --secondary: #8297ff;
+    --secondary-light: #99b7de;
+    --secondary-dark: #505fab;
+}
+
 
 .top-menu {
     display: flex;
@@ -21,17 +32,18 @@ margin-bottom: 1rem;
 flex-grow: 1;
 }
 
-.top-menu-item:hover {
-    transform: scale(1.1);
-}
 
 .active {
-    border-bottom: 1px solid orange;
-    border-right: 1px solid orange;
+    border-bottom: 1px solid var(--primary);
 }
 
 .top-menu-link {
 text-decoration: none;
+color: var(--secondary-dark);
+}
+
+.top-menu-link:hover {
+    color: var(--primary);
 }
 
 .projects-container {

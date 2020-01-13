@@ -4,7 +4,9 @@ import ProjectSet from "../components/ProjectSet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import SpacepostImage from "../images/spacepost.png"
+import SpacepostImage from "../images/project-splash/spacepost.png"
+import iPhoneImage from "../images/project-splash/iphone-screenshot.png"
+
 
 /* Project template:
  {
@@ -30,16 +32,16 @@ const ProjectsInfo = [
     ]
   },
   {
-    "title" : "Huge Quest v0.1",
+    "title" : "Hug Quest v0.1",
     "image" : "",
     "description":"Two player exploration game with randomly-generated maps: Find the other player (or a simple AI) and hug them.",
     "project-link":"",
     "icons" : []
   },
   {
-    "title" : "New Project",
-    "image" : "",
-    "description":"",
+    "title" : "iPhone 11 Launch",
+    "image" : iPhoneImage,
+    "description":"Worked on the September 2019 launch in California",
     "project-link":"",
     "icons" : []
   }
