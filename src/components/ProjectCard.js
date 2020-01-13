@@ -1,6 +1,6 @@
 /**
  *  Component: Project Card
- *  Will take a json file of project information
+ *  Will take a set of project information
  *  Will include title, link, description, image, icon tray
  * 
  */
@@ -12,7 +12,7 @@ class ProjectCard extends React.Component {
     return(
         <div className = "project-card">
             <a href={this.props.link}>
-            <img src={this.props.image} className = "project-image"></img>
+            <img className="project-image" src={this.props.image} className = "project-image"></img>
             <h2> {this.props.title}</h2>
             <p> {this.props.info}</p>
             </a>

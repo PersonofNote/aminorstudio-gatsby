@@ -6,26 +6,33 @@
     list-style: none;
     align-items: center;
   }
-  
-  .top-menu-item {
-    padding: 0.3rem 1rem;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    flex-grow: 1;
-  }
 
-  .top-menu-item:hover {
-      transform: scale(1.1);
-  }
+.site-logo {
+    height:64px;
+    width: 64px;
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+}
   
-  .active {
-      border-bottom: 1px solid orange;
-      border-right: 1px solid orange;
-  }
-  
-  .top-menu-link {
-    text-decoration: none;
-  }
+.top-menu-item {
+padding: 0.3rem 1rem;
+border-radius: 4px;
+margin-bottom: 1rem;
+flex-grow: 1;
+}
+
+.top-menu-item:hover {
+    transform: scale(1.1);
+}
+
+.active {
+    border-bottom: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+.top-menu-link {
+text-decoration: none;
+}
 
 .projects-container {
     display: grid;
@@ -62,7 +69,6 @@
 }
 
 .project-image {
-    height: 50%;
     min-height: 4rem;
 }
 

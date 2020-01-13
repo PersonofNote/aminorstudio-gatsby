@@ -4,6 +4,8 @@ import ProjectSet from "../components/ProjectSet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import SpacepostImage from "../images/spacepost.png"
+
 /* Project template:
  {
     "title" : "New Project",
@@ -20,7 +22,7 @@ import SEO from "../components/seo"
 const ProjectsInfo = [
   {
     "title" : "Spacepost",
-    "image" : "",
+    "image" : SpacepostImage,
     "description":"Developed Spacepost’s branding (Spacedood logo, colors, typography) and landing pages",
     "project-link":"http://www.spacepost.io/",
     "icons" : [

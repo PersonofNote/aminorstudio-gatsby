@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import MenuLinks from "./MenuLinks"
-
+import siteLogo from "../images/logo.png"
 
 const mainMenulinks = [
   {
@@ -18,10 +18,10 @@ const mainMenulinks = [
   }
 ]
 
-const Header = ({ siteLogo }) => (
+const Header = () => (
   <header>
     <div className="top-menu">
-      <img alt="site-logo" src={ siteLogo }></img>
+      <div className="menu-toggle"><a href="/"><img className="site-logo" alt="site-logo" src={ siteLogo }></img></a></div>
       <MenuLinks links={ mainMenulinks }/>
     </div>
   </header>
@@ -35,7 +35,7 @@ Header.propTypes = {
 
 Header.defaultProps = {
   siteTitle: ``,
-  siteLogo: `../src/images/logo.png`,
+  siteLogo: siteLogo,
   siteMenu: [
     {
       "link": "/",
