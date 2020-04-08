@@ -11,6 +11,10 @@ const mainMenulinks = [
   {
     "link": "/bits",
     "name": "Bits"
+  },
+  {
+    "link": "/posts",
+    "name": "Thoughts"
   }
 ]
 

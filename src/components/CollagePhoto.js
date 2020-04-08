@@ -1,6 +1,6 @@
     import React from 'react'
 
-    const CollagePhotos = ({ photos }) => {
+    const CollagePhoto = ({ photos }) => {
       return (
         <div>
           {photos.map((photo) => (
@@ -16,4 +16,4 @@
       )
     };
 
-    export default CollagePhotos
+    export default Contacts

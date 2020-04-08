@@ -1,0 +1,22 @@
+# SCHEMA:
+#   - project:
+#      title:
+#      image:
+#      description:
+#      icons:
+#        - iconset:
+#            icon:
+#            link:
+#            tooltip:
+
+title: Projects
+content:
+  - project: 
+      title: iPhone-11 Launch
+      image: '../images/project-splash/iphone-screenshot.png'
+      description: Front-end development for the iPhone-11 launch in Cupertino, in September 2019
+      icons:
+        - iconset:
+            icon: 
+            link:
+            tooltip:
