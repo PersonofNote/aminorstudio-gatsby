@@ -13,8 +13,9 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div id="intro-image"></div>
     <p className="center">Front end developer specializing in thoughtful, interactive user experiences.</p>
-    <div class="front-page-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a></div>
+    <div className="front-page-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a></div>
   </Layout>
 )
 
 export default IndexPage
+

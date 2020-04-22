@@ -1,0 +1,18 @@
+Scratchpad
+
+DONE 4/8
+-Blocked out blog page with yaml
+
+TODO 4/9
+-Figure out images. Possibly figure out what the heck graphql queries are
+
+DONE BY 4/19
+-Figured out images and wrapping head around graphql queries
+
+TODO
+-Implement filtering
+-Fix scroll magic sticky header
+
+Done 4/20
+-Fixed header
+-Learned more about graphql

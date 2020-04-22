@@ -1,8 +1,10 @@
 import React from "react"
-import ProjectSet from "../components/ProjectSet"
-
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
+import Layout from "../components/layout"
+import { graphql } from "gatsby"
+import FilterContent from "../components/Filtercontent";
+import ProjectContent from "../components/ProjectContent"
 
 import SpacepostImage from "../images/project-splash/spacepost.png"
 import iPhoneImage from "../images/project-splash/iphone-screenshot.png"
@@ -12,19 +14,66 @@ import SVGDefs from '../images/icons/defs.svg'
 import GithubIcon from '../images/icons/github.svg';
 import ReactIcon from '../images/icons/react.svg';
 
-import ProjectsList from '../components/ProjectsList';
-
-
-
-const ProjectPage = () => (
-  <Layout>
+const ProjectsPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const Projects = edges
+    .filter(edge => !!edge.node.frontmatter.visible) 
+    .map(edge =>  <article key={edge.node.title} className="project-card">
+      <Img className="project-image" fluid={edge.node.frontmatter.coverImage.childImageSharp.fluid} />
+      <ProjectContent key={edge.node.id} post={edge.node}></ProjectContent>
+      </article>)
+  return (
+    <Layout>
     <SEO title="Projects" />
-    <h1>Projects Placeholder Page</h1>
+    <FilterContent />
     <div style={{ maxWidth: `960px`, margin: `1.45rem` }}></div>
-    <div className="">
-      <ProjectsList />
-    </div>
-  </Layout>
-)
+    <div className="projects-container">{Projects}</div>
+    </Layout>
+  )
+}
 
-export default ProjectPage
+export default ProjectsPage
+
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            title
+            visible
+            description
+            tags
+            icons {
+              icon {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              link
+              tooltip
+            }
+            coverImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`

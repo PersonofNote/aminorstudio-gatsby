@@ -19,12 +19,31 @@
     list-style: none;
 }
 
+.sticky-wrapper {
+    position: relative;
+    height: 6rem;
+}
+
+.sticky nav {
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index:1;
+    background-color: white;
+}
+
 /* Other classes */
 
 body {
     color: var(--text);
 }
 
+.top-menu-anchor {
+    height: 2px;
+    width: 100%;
+    border: 1px solid red;
+}
 
 .top-menu {
     display: flex;
@@ -32,6 +51,7 @@ body {
     flex-wrap: nowrap;
     list-style: none;
     align-items: center;
+    z-index: 10;
   }
 
 .site-logo {
@@ -60,6 +80,7 @@ color: var(--secondary);
 
 .top-menu-link:hover {
     color: var(--primary);
+    transition: color 500ms;
 }
 
 /* Front page */
@@ -106,6 +127,8 @@ color: var(--secondary);
   flex-direction: column;
   align-content: center;
   text-align: center;
+  justify-content: center;
+  object-fit: cover;
 }
 
 .icon-tray {
@@ -150,7 +173,8 @@ color: var(--secondary);
 }
 
 .project-image {
-    min-height: 4rem;
+    min-height: 200px;
+    object-fit: cover;
 }
 
 .project-tooltip {
@@ -188,7 +212,14 @@ color: var(--secondary);
     display: block;
 } 
 
+/* Posts */
+.featured-post-image {
+    height: 100px;
+    width: 100px;
+}
 
+
+/* Misc */
 
 main {
     margin-bottom: 1rem;
@@ -196,8 +227,6 @@ main {
 
 footer {
     border-top: 1px solid gray;
-    position: absolute;
-    bottom: 0;
 }
 
 /* Animations */

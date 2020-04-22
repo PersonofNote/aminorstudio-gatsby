@@ -1,7 +1,9 @@
 import PropTypes from "prop-types"
-import React from "react"
+import React, { Fragment, useEffect, useRef, useState } from 'react';
 import MenuLinks from "./MenuLinks"
 import siteLogo from "../images/logo.png"
+import { Controller, Scene } from 'react-scrollmagic';
+import IconArrow from "../components/icon-components/IconArrow.js"
 
 const mainMenulinks = [
   {
@@ -18,14 +20,40 @@ const mainMenulinks = [
   }
 ]
 
-const Header = () => (
-  <header>
-    <div className="top-menu">
-      <div className="menu-toggle"><a href="/"><img className="site-logo" alt="site-logo" src={ siteLogo }></img></a></div>
-      <MenuLinks links={ mainMenulinks }/>
-    </div>
-  </header>
-)
+const Header = () =>{
+  /*
+  const [isSticky, setSticky] = useState(false);
+  const ref = useRef(null);
+  const handleScroll = () => {
+    console.log(ref); // WHY
+    setSticky(ref.current.getBoundingClientRect().top <= 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll);
+    };
+  }, []);
+  */
+
+  return(
+    <header>
+      <Controller>
+      <div className='top-menu-anchor'></div>
+      <Scene classToggle={"#top-menu", "scrolling"} triggerHook={0} pin>
+        <nav id='top-menu' className="top-menu">
+          <a href="/"><img className="site-logo" alt="site-logo" src={ siteLogo }></img></a>
+          <div className="menu-toggle"><IconArrow/></div>
+          <MenuLinks links={ mainMenulinks }/>
+        </nav>
+      </Scene>
+    </Controller>
+
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

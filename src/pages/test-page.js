@@ -1,14 +1,33 @@
-import React from "react"
-import YAMLData from "../../content/test-content.yaml"
+import React from 'react';
+import { Controller, Scene } from 'react-scrollmagic';
+ 
+const TestPage = () => (
+  <div>
+    <Controller>
+      <Scene duration={600} pin>
+        <div>Sticky Example</div>
+      </Scene>
+    </Controller>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet risus nullam eget felis. Pellentesque habitant morbi tristique senectus et netus. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Tellus in metus vulputate eu. Hac habitasse platea dictumst quisque sagittis purus sit amet. Massa placerat duis ultricies lacus sed turpis tincidunt. Non tellus orci ac auctor augue mauris augue. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Sit amet mattis vulputate enim nulla. Commodo ullamcorper a lacus vestibulum sed.
 
-const YAMLbuildtime = () => (
-  <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
-    <h1>{YAMLData.title}</h1>
-    <ul>
-      {YAMLData.content.map((data, index) => {
-        return <li key={`content_item_${index}`}>{data.item.text} {data.item.color}</li>
-      })}
-    </ul>
+Consequat nisl vel pretium lectus. Suspendisse in est ante in nibh mauris cursus. Eget velit aliquet sagittis id. Amet mattis vulputate enim nulla aliquet porttitor lacus. Senectus et netus et malesuada fames ac turpis egestas maecenas. Vitae suscipit tellus mauris a diam maecenas sed enim. Erat velit scelerisque in dictum non consectetur a. Pellentesque elit eget gravida cum sociis. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Malesuada fames ac turpis egestas. Etiam erat velit scelerisque in dictum non consectetur. Posuere morbi leo urna molestie at elementum eu. Tellus molestie nunc non blandit massa enim nec dui nunc. Nibh nisl condimentum id venenatis a condimentum vitae sapien.
+
+Risus nec feugiat in fermentum posuere. Vel risus commodo viverra maecenas accumsan lacus. Nunc non blandit massa enim nec dui nunc mattis enim. At risus viverra adipiscing at in tellus integer feugiat scelerisque. Proin sed libero enim sed faucibus turpis in. Mauris in aliquam sem fringilla ut morbi. Enim sed faucibus turpis in eu. Porta nibh venenatis cras sed felis eget velit aliquet sagittis. Enim praesent elementum facilisis leo vel fringilla. Semper quis lectus nulla at volutpat diam. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Pretium nibh ipsum consequat nisl vel pretium lectus. Integer malesuada nunc vel risus commodo viverra maecenas. Blandit aliquam etiam erat velit scelerisque. Arcu felis bibendum ut tristique et egestas. In pellentesque massa placerat duis ultricies. Donec ac odio tempor orci dapibus ultrices. Non sodales neque sodales ut etiam sit amet nisl purus. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Pellentesque dignissim enim sit amet.
+
+Nunc faucibus a pellentesque sit amet porttitor. Duis ultricies lacus sed turpis tincidunt id. Amet dictum sit amet justo donec enim diam vulputate. Vestibulum rhoncus est pellentesque elit. Habitant morbi tristique senectus et netus et malesuada fames. Tristique magna sit amet purus. Vitae congue eu consequat ac felis donec. In vitae turpis massa sed elementum tempus. Purus viverra accumsan in nisl nisi. Ut eu sem integer vitae justo eget. Massa sapien faucibus et molestie. Volutpat blandit aliquam etiam erat velit. Egestas integer eget aliquet nibh. Id diam vel quam elementum. Urna condimentum mattis pellentesque id nibh tortor id. Sed odio morbi quis commodo odio. Urna et pharetra pharetra massa.
+
+Duis tristique sollicitudin nibh sit amet commodo. Augue neque gravida in fermentum et sollicitudin ac. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Tortor consequat id porta nibh venenatis cras. Fringilla ut morbi tincidunt augue interdum. Viverra accumsan in nisl nisi. Nulla facilisi etiam dignissim diam quis enim. Sed libero enim sed faucibus. Auctor urna nunc id cursus. Felis eget nunc lobortis mattis aliquam faucibus.
+
+Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Maecenas sed enim ut sem viverra. Aenean et tortor at risus viverra adipiscing at in tellus. Tortor at risus viverra adipiscing at in tellus integer feugiat. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Sed turpis tincidunt id aliquet risus feugiat. Eleifend mi in nulla posuere sollicitudin. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. Odio facilisis mauris sit amet massa vitae tortor condimentum. Consectetur libero id faucibus nisl tincidunt eget nullam non. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Donec enim diam vulputate ut pharetra sit. Ultrices neque ornare aenean euismod elementum.
+
+Posuere ac ut consequat semper viverra. Non pulvinar neque laoreet suspendisse. Ut ornare lectus sit amet est placerat in. Nam at lectus urna duis convallis convallis tellus id interdum. Sed arcu non odio euismod lacinia at quis risus sed. Tellus orci ac auctor augue mauris augue. Dui nunc mattis enim ut tellus elementum. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Praesent elementum facilisis leo vel fringilla est ullamcorper. Nunc vel risus commodo viverra maecenas accumsan lacus vel. Feugiat sed lectus vestibulum mattis ullamcorper velit. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Tellus id interdum velit laoreet id donec. A erat nam at lectus urna duis.
+
+Eu augue ut lectus arcu. Risus sed vulputate odio ut enim blandit. Elementum tempus egestas sed sed risus pretium. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Lectus sit amet est placerat in egestas erat imperdiet. Odio euismod lacinia at quis risus sed vulputate. Quam pellentesque nec nam aliquam sem et tortor consequat id. Vitae sapien pellentesque habitant morbi tristique. Rhoncus est pellentesque elit ullamcorper. Imperdiet nulla malesuada pellentesque elit. Lorem sed risus ultricies tristique nulla aliquet enim tortor. Amet volutpat consequat mauris nunc congue nisi. Et ultrices neque ornare aenean euismod. Scelerisque fermentum dui faucibus in ornare. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum.
+
+Nisl purus in mollis nunc. In fermentum posuere urna nec tincidunt praesent. Varius morbi enim nunc faucibus a. Ligula ullamcorper malesuada proin libero nunc consequat. Malesuada fames ac turpis egestas integer eget aliquet. Eget gravida cum sociis natoque. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra convallis posuere morbi leo urna molestie at elementum. Sem fringilla ut morbi tincidunt augue interdum velit. Tortor at auctor urna nunc id cursus metus. Ipsum consequat nisl vel pretium lectus quam id leo in. Iaculis at erat pellentesque adipiscing commodo.
+
+At ultrices mi tempus imperdiet nulla malesuada. Lorem ipsum dolor sit amet consectetur. Urna condimentum mattis pellentesque id nibh tortor id aliquet. In eu mi bibendum neque. Non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus ultrices in iaculis. Tempor orci dapibus ultrices in. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vitae proin sagittis nisl rhoncus. Vestibulum morbi blandit cursus risus at ultrices. Sit amet volutpat consequat mauris nunc congue nisi. Purus semper eget duis at tellus.</p>
   </div>
-)
-export default YAMLbuildtime
+);
+
+export default TestPage;

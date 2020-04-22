@@ -1,3 +1,4 @@
+//Uncertain if I should keep this
 import React from "react"
 
 const Icon = (props) => (
