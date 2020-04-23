@@ -6,8 +6,16 @@ module.exports = {
     logo: `src/images/logo.png`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`, // I don't remember what this is
-    `gatsby-transformer-remark`, // Or this. Images maybe?
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: "svg-react-loader",
+      options: {
+        rule: {
+          include: `${__dirname}/src/images/icons`
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -25,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`, // Why a name?
+        name: `pages`,
         path: `${__dirname}/src/pages`,
       },
     },
