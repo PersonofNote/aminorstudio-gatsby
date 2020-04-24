@@ -22,7 +22,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-// BUG: edge is indefined
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -31,6 +30,9 @@ exports.createPages = async ({ graphql, actions }) => {
       allMarkdownRemark {
         edges {
           node {
+            frontmatter {
+              posttype
+            }
             fields {
               slug
             }
@@ -40,25 +42,37 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ edge }) => {
+  /*
+  console.log("LOGGING:")
+  const reqJSON = JSON.parse(JSON.stringify(result.data.allMarkdownRemark.edges))
+  //console.log(typeof(reqJSON))
+  //console.log(result.data.allMarkdownRemark)
+  reqJSON.forEach((edge)=> {
+    console.log(edge.node.frontmatter);
+    console.log(edge.node.fields);
+  })
+  */
+
+
+  result.data.allMarkdownRemark.edges.forEach((edge) => {
     if (edge.node.frontmatter.posttype === 'project') {
       createPage({
         path: edge.node.fields.slug,
-        component: projectTemplate,
+        component: path.resolve('./src/templates/project-post.js'),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
-          slug: node.fields.slug,
+          slug: edge.node.fields.slug,
         },
       })
     }else{
     createPage({
       path: edge.node.fields.slug,
-      component: postTemplate,
+      component: path.resolve(`./src/templates/blog-post.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
-        slug: node.fields.slug,
+        slug: edge.node.fields.slug,
       },
     })
   }

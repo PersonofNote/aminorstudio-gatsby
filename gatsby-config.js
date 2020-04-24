@@ -6,6 +6,7 @@ module.exports = {
     logo: `src/images/logo.png`,
   },
   plugins: [
+    `gatsby-plugin-less`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
@@ -15,20 +16,6 @@ module.exports = {
           include: `${__dirname}/src/images/icons`
         }
       }
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`, `.md`],
-        gatsbyRemarkPlugins: [ // Gatsby remark has to be a sub-plugin as well as its own plugin...?
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200,
-            },
-          },
-        ],
-      },
     },
     {
       resolve: `gatsby-source-filesystem`,

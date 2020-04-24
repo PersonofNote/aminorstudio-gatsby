@@ -44,8 +44,10 @@ const Header = () =>{
       <div className='top-menu-anchor'></div>
       <Scene classToggle={"#top-menu", "scrolling"} triggerHook={0} pin>
         <nav id='top-menu' className="top-menu">
-          <a href="/"><img className="site-logo" alt="site-logo" src={ siteLogo }></img></a>
-          <div className="menu-toggle"><IconArrow/></div>
+          <div className="logo-wrap">
+            <a href="/"><img className="site-logo" alt="site-logo" src={ siteLogo }></img></a>
+            <IconArrow />
+          </div>
           <MenuLinks links={ mainMenulinks }/>
         </nav>
       </Scene>
