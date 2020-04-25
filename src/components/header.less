@@ -1,4 +1,8 @@
 @arrowRotate: 270deg;
+@animDurationstandard: 800ms;
+@animDurationhalf: calc(@animDurationstandard/2);
+@boxShadowstandard: 2px 2px 8px 4px rgba(211,211,211,0.5);
+@boxShadowbottom: 0 4px 2px -2px rgba(211,211,211,0.5);
 
 .top-menu-anchor {
     height: 2px;
@@ -20,7 +24,7 @@
         justify-content: center;
         align-items: center;
         svg {
-            display: none; /* Ok to hide from screen readers here */
+            display: block;
             opacity: 0;
             transform: rotate(@arrowRotate) scale(0.1);
             stroke: orange;
@@ -39,6 +43,7 @@
         display: flex;
         flex-direction: row;
         margin-left: 1rem;
+        transition: all @animDurationhalf;
     }
 
     .top-menu-item {
@@ -64,26 +69,64 @@
 
     &.scrolling { 
         background-color: white; 
-        position: relative;    
+        position: relative;
+        @media (max-width: 768px) {
+            box-shadow: @boxShadowbottom;
+            .logo-wrap {
+                height: auto;
+            }
+            .site-logo {
+                transform: scale(0.75);
+                margin: 0;
+            }
+            svg {
+                display: none;
+            }
+            .top-menu-item {
+                margin-bottom: 0;
+            }
+        }
         /* Only apply dropdown styles on large screens */
         @media (min-width: 768px) {
-            svg {
-                display: block;
-                opacity: 1;
-                transform: rotate(@arrowRotate) scale(1);
-                transition: all 800ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-                &.active {
-                    transform: rotate(90) scale(1);
-                    stroke: orange;
-                    stroke-width: 6;
-                    transition: all 800ms cubic-bezier(0.680, -0.550, 0.265, 1.550)
+            .toggle-wrap {
+                svg {
+                    opacity: 1;
+                    transform: rotate(@arrowRotate) scale(1);
+                    transition: all @animDurationstandard cubic-bezier(0.680, -0.550, 0.265, 1.550);
+                }
+                &.open {
+                    svg {
+                        transform: rotate(90deg) scale(1);
+                        transition: all @animDurationstandard cubic-bezier(0.680, -0.550, 0.265, 1.550)
+                    }
                 }
             }
             .menu-links {
                 position: absolute;
-                left: -9999px;
-                &.active {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                box-shadow: @boxShadowstandard;
+                top: -250px;
+                margin-left: 0;
+                opacity: 0;
+                .top-menu-item {
+                    text-align: center;
+                    margin-bottom: 0;
+                    &.active {
+                        background-color: orange;
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+                &.open {
                     left: 0;
+                    top: 100%;
+                    opacity: 1;
+                    transition-duration: @animDurationhalf;
+                    transition-delay: -250ms;
+                    transition-property: top;
                 }
             }
         }

@@ -19,7 +19,7 @@ icons:
     - { icon: "github", link: "google.com", tooltip: "See the code on Github" }
 visible: True
 date: 2018-03-20
-tags: [css, html]
+tags: [blender, art, community, creative, pixel art]
 ---
     
       

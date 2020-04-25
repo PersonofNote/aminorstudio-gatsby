@@ -21,7 +21,8 @@ const mainMenulinks = [
 ]
 
 const Header = () => {
-
+  const [isOpen, setOpen] = useState(false);
+  const toggleOpen = () => setOpen(!isOpen);
   return(
     <header>
       <Controller>
@@ -30,9 +31,11 @@ const Header = () => {
         <nav id='top-menu' className="top-menu">
           <div className="logo-wrap">
             <a href="/"><img className="site-logo" alt="site-logo" src={ siteLogo }></img></a>
-            <IconArrow />
+            <div onClick={toggleOpen} className={`toggle-wrap ${isOpen ? "open" : ""}`}>
+              <IconArrow />
+            </div>
           </div>
-          <div className="menu-links">
+          <div className={`menu-links ${isOpen ? "open" : "closed"}`}>
             <MenuLinks links={ mainMenulinks }/>
           </div>
         </nav>
