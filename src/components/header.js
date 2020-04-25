@@ -20,23 +20,7 @@ const mainMenulinks = [
   }
 ]
 
-const Header = () =>{
-  /*
-  const [isSticky, setSticky] = useState(false);
-  const ref = useRef(null);
-  const handleScroll = () => {
-    console.log(ref); // WHY
-    setSticky(ref.current.getBoundingClientRect().top <= 0);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', () => handleScroll);
-    };
-  }, []);
-  */
+const Header = () => {
 
   return(
     <header>
@@ -48,7 +32,9 @@ const Header = () =>{
             <a href="/"><img className="site-logo" alt="site-logo" src={ siteLogo }></img></a>
             <IconArrow />
           </div>
-          <MenuLinks links={ mainMenulinks }/>
+          <div className="menu-links">
+            <MenuLinks links={ mainMenulinks }/>
+          </div>
         </nav>
       </Scene>
     </Controller>

@@ -6,7 +6,7 @@ export default ( {props} ) => {
         type="text"
         aria-label="Search"
         placeholder="Type to filter posts..."
-        onChange={console.log('Changed')}/>
+        onChange={ onChange={handleInputChange}}/>
     )
 
 }

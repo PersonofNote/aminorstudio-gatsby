@@ -1,0 +1,92 @@
+@arrowRotate: 270deg;
+
+.top-menu-anchor {
+    height: 2px;
+    width: 100%;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    align-items: center;
+    z-index: 10;
+    padding-left: 1rem;
+
+    .logo-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        svg {
+            display: none; /* Ok to hide from screen readers here */
+            opacity: 0;
+            transform: rotate(@arrowRotate) scale(0.1);
+            stroke: orange;
+            stroke-width: 6;
+            transition: all 800ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+        .site-logo {
+            height:64px;
+            width: 64px;
+            margin: 0;
+            margin-top: 12px;
+        }
+    }
+
+    .menu-links {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+
+    .top-menu-item {
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    }
+
+
+    .active {
+        border-bottom: 1px solid var(--primary);
+    }
+
+    .top-menu-link {
+    text-decoration: none;
+    color: var(--secondary);
+    }
+
+    .top-menu-link:hover {
+        color: var(--primary);
+        transition: color 500ms;
+    }
+
+    &.scrolling { 
+        background-color: white; 
+        position: relative;    
+        /* Only apply dropdown styles on large screens */
+        @media (min-width: 768px) {
+            svg {
+                display: block;
+                opacity: 1;
+                transform: rotate(@arrowRotate) scale(1);
+                transition: all 800ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+                &.active {
+                    transform: rotate(90) scale(1);
+                    stroke: orange;
+                    stroke-width: 6;
+                    transition: all 800ms cubic-bezier(0.680, -0.550, 0.265, 1.550)
+                }
+            }
+            .menu-links {
+                position: absolute;
+                left: -9999px;
+                &.active {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+}
