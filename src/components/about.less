@@ -1,0 +1,29 @@
+.clients-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+
+
+@supports not (display: grid) {
+    .clients-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .client-card {
+        width: 50%;
+    }
+  }
+
+/* Media queries */
+
+@media (min-width: 750px) {
+    .clients-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+  }

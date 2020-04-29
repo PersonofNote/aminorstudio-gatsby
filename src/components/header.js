@@ -5,7 +5,14 @@ import siteLogo from "../images/logo.png"
 import { Controller, Scene } from 'react-scrollmagic';
 import IconArrow from "../components/icon-components/IconArrow.js"
 
+// Move to separate file
+// Consider reworking to use the scroll hook and putting on the NPM registry so you can reuse this in other projects.
+// Also consider implementing this recursively, and allowing for submenus.
 const mainMenulinks = [
+  {
+    "link": "/about",
+    "name": "About"
+  },
   {
     "link": "/projects",
     "name": "Projects"
@@ -20,7 +27,7 @@ const mainMenulinks = [
   }
 ]
 
-const Header = () => {
+const Header = (props) => {
   const [isOpen, setOpen] = useState(false);
   const toggleOpen = () => setOpen(!isOpen);
   return(
@@ -30,7 +37,7 @@ const Header = () => {
       <Scene classToggle={"#top-menu", "scrolling"} triggerHook={0} pin>
         <nav id='top-menu' className="top-menu">
           <div className="logo-wrap">
-            <a href="/"><img className="site-logo" alt="site-logo" src={ siteLogo }></img></a>
+            <a href="/"><img className="site-logo" alt="site-logo" src={siteLogo}></img></a>
             <div onClick={toggleOpen} className={`toggle-wrap ${isOpen ? "open" : ""}`}>
               <IconArrow />
             </div>

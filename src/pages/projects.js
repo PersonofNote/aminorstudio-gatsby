@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 //import FilterContent from "../components/Filtercontent"
 import ProjectContent from "../components/ProjectContent"
+import "../components/projects.less"
 
 const ProjectsPage = props => {
   const { data } = props
