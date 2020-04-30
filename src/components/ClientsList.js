@@ -1,12 +1,14 @@
 import React from "react"
 
-const ClientsList = ( props ) => {
-    console.log(props);
+const ClientsList =  props  => {
     const Clients = props.clients.map(client=> {
+        const index = props.clients.indexOf(client)
+        const cliImg = client.client.image;
+        console.log(cliImg);
         return(
-            <section key={client.name} className="client-section">
-                <a href={client.link}>
-                    <img src={require("../images/meals-on-wheels-logo.png")} alt={client.name}></img>
+            <section key={index} className="client-section">
+                <a href={client.client.link}>
+                    <img src={require(`../images/${client.client.image}`)} alt={client.client.name}></img>
                 </a>
             </section>
         )
