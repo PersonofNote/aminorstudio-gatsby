@@ -1,18 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ClientsList from "../components/ClientsList"
 import "../components/about.less"
+import TestTrans from "../components/TestTrans"
 
 const clientsList = [
   {
-  client : {
-    "name" : "Meals on Wheels",
-    "image" : "meals-on-wheels-logo.png",
-    "link" : "https://www.mealsonwheels.org"
-  }
-  } ,
+    client: {
+      "name" : "US Diplomacy Museum",
+      "image" : "state-department-seal.png",
+      "link" : "https://www.diplomacy.gov"
+    }
+  },
    {
     client : {
     "name" : "Apple",
@@ -20,6 +21,13 @@ const clientsList = [
     "link" : "https://www.apple.com"
   }
   },
+  {
+    client : {
+      "name" : "Meals on Wheels",
+      "image" : "meals-on-wheels-logo.png",
+      "link" : "https://www.mealsonwheels.org"
+    }
+    } ,
   {
     client : {
     "name": "IB.TC",
@@ -57,15 +65,19 @@ const clientsList = [
   },
 ]
 
-const AboutPage = () => (
+const AboutPage = () =>{
+  const [entered, setEntered] = useState(false);
+  return (
+ 
   <Layout>
-    <SEO title="Home" />
-    <h1> About Me </h1>
+    <SEO title="About" />
+    <h1> Clients </h1>
     <h2></h2>
     <ClientsList clients={clientsList} />
     <h2>FAQs</h2>
   </Layout>
 )
+  }
 
 export default AboutPage
 

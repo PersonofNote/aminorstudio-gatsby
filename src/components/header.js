@@ -1,54 +1,42 @@
 import PropTypes from "prop-types"
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import MenuLinks from "./MenuLinks"
+// TODO rework
 import siteLogo from "../images/logo.png"
-import { Controller, Scene } from 'react-scrollmagic';
 import IconArrow from "../components/icon-components/IconArrow.js"
 
-// Move to separate file
-// Consider reworking to use the scroll hook and putting on the NPM registry so you can reuse this in other projects.
-// Also consider implementing this recursively, and allowing for submenus.
-const mainMenulinks = [
-  {
-    "link": "/about",
-    "name": "About"
-  },
-  {
-    "link": "/projects",
-    "name": "Projects"
-  },
-  {
-    "link": "/bits",
-    "name": "Bits"
-  },
-  {
-    "link": "/posts",
-    "name": "Thoughts"
-  }
-]
+
 
 const Header = (props) => {
+  const [scrolling, setScrolling] = useState(false);
+  const [scrollTop] = useState(0);
+
+  useEffect(() => {
+    const onScroll = e => {
+      setScrolling(e.target.documentElement.scrollTop > 20);
+      console.log(e.target.documentElement.scrollTop)
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollTop]);
+
+
   const [isOpen, setOpen] = useState(false);
   const toggleOpen = () => setOpen(!isOpen);
   return(
     <header>
-      <Controller>
-      <div className='top-menu-anchor'></div>
-      <Scene classToggle={"#top-menu", "scrolling"} triggerHook={0} pin>
-        <nav id='top-menu' className="top-menu">
-          <div className="logo-wrap">
-            <a href="/"><img className="site-logo" alt="site-logo" src={siteLogo}></img></a>
-            <div onClick={toggleOpen} className={`toggle-wrap ${isOpen ? "open" : ""}`}>
-              <IconArrow />
-            </div>
-          </div>
-          <div className={`menu-links ${isOpen ? "open" : "closed"}`}>
-            <MenuLinks links={ mainMenulinks }/>
-          </div>
-        </nav>
-      </Scene>
-    </Controller>
-
+     <nav id='top-menu' className={`top-menu ${scrolling ? "scrolling" : ""}`}>
+        <div className="logo-wrap">
+        <a href="/"><img className="site-logo" alt="site-logo" src={siteLogo}></img></a>
+        <div onClick={toggleOpen} className={`toggle-wrap ${isOpen ? "open" : ""}`}>
+          <IconArrow stroke={props.arrowColor} />
+        </div>
+        </div>
+        <div className={`menu-links ${isOpen ? "open" : "closed"}`}>
+        <MenuLinks links={ props.links }/>
+        </div>
+      </nav>
     </header>
   )
 }

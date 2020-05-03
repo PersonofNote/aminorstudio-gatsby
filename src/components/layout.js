@@ -15,6 +15,26 @@ import "./layout.css"
 import "./styles.css"
 import "./header.less"
 
+const mainMenulinks = [
+  {
+    "link": "/about",
+    "name": "About"
+  },
+  {
+    "link": "/projects",
+    "name": "Projects"
+  },
+  {
+    "link": "/bits",
+    "name": "Bits"
+  },
+  {
+    "link": "/posts",
+    "name": "Thoughts"
+  }
+]
+
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -29,7 +49,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} siteLogo={"../images/logo.png"}/>
+      <Header siteTitle={data.site.siteMetadata.title} siteLogo={data.logo} links={mainMenulinks} arrowColor={'orange'}/>
       <div
         style={{
           margin: `0 auto`,
