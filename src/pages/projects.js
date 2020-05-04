@@ -12,14 +12,20 @@ import IconGithub from "../components/icon-components/IconGithub"
 import IconLinkedIn from "../components/icon-components/IconLinkedIn"
 import IconGooglePlay from "../components/icon-components/IconGooglePlay"
 import IconWordpress from "../components/icon-components/IconWordpress"
+import IconPhp from "../components/icon-components/IconPhp"
+import IconLaravel from "../components/icon-components/IconLaravel"
+import IconHeroku from "../components/icon-components/IconHeroku"
 
-const tags = ['All','javascript', 'php', 'css', 'github']
+const tags = ['All','javascript', 'php', 'css', 'github', 'laravel', "heroku", "wordpress", "googleplay"]
 
 const IconList = {
   "github": <IconGithub/>,
   "linkedin" : <IconLinkedIn/>,
   "googleplay" : <IconGooglePlay/>,
-  "wordpress" : <IconWordpress/>
+  "wordpress" : <IconWordpress/>,
+  "php" : <IconPhp/>,
+  "laravel" : <IconLaravel/>,
+  "heroku" : <IconHeroku/>
 }
 
 const ProjectsPage = props => {
