@@ -20,6 +20,8 @@ icons:
 visible: True
 date: 2018-03-20
 tags: [blender, art, community, creative, pixel art]
+# TODO potentially integrate tags and icons in some way to foolproof it a bit. Although I want to be able to
+# add tags that don't have icons, so maybe not.
 ---
     
       

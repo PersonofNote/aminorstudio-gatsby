@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 const PostLink = ({ post }) => 
 {
-    console.log(post);
     return (
   <div>
     <Link to={post.fields.slug}>

@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ClientsList from "../components/ClientsList"
 import "../components/about.less"
-import TestTrans from "../components/TestTrans"
 
 const clientsList = [
   {

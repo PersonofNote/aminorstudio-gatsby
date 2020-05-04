@@ -7,6 +7,21 @@ import { graphql } from "gatsby"
 import ProjectContent from "../components/ProjectContent"
 import "../components/projects.less"
 
+// Importing icon list
+import IconGithub from "../components/icon-components/IconGithub"
+import IconLinkedIn from "../components/icon-components/IconLinkedIn"
+import IconGooglePlay from "../components/icon-components/IconGooglePlay"
+import IconWordpress from "../components/icon-components/IconWordpress"
+
+const tags = ['All','javascript', 'php', 'css', 'github']
+
+const IconList = {
+  "github": <IconGithub/>,
+  "linkedin" : <IconLinkedIn/>,
+  "googleplay" : <IconGooglePlay/>,
+  "wordpress" : <IconWordpress/>
+}
+
 const ProjectsPage = props => {
   const { data } = props
   const allPosts = data.allMarkdownRemark.edges
@@ -19,7 +34,6 @@ const ProjectsPage = props => {
   })
   // Extract to reusable component
   const handleInputChange = event => {
-    console.log(event.target.value)
     const query = event.target.value
     const { data } = props
 
@@ -43,26 +57,27 @@ const ProjectsPage = props => {
     })
   }
 
+
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
   const posts = hasSearchResults ? filteredData : allPosts
-  console.log(state);
+
+  const TagButtons = tags.map(tag => (
+    <button key={tag} value={tag} onClick={handleInputChange}>{IconList[tag]}</button>
+  ))
+
   const Projects = posts
       .filter(edge => !!edge.node.frontmatter.visible) 
       .map(edge =>  <article  style={{position: `relative`}} key={edge.node.title} className="project-card">
         <Img className="project-image" fluid={edge.node.frontmatter.coverImage.childImageSharp.fluid} />
         <ProjectContent key={edge.node.id} content={edge.node}></ProjectContent>
         </article>)
+
   return (
     <Layout>
     <SEO title="Projects" />
-    <input
-              type="text"
-              aria-label="Search"
-              placeholder="Type to filter posts..."
-              onChange={handleInputChange}
-          />
-    <div style={{ maxWidth: `960px`, margin: `1.45rem` }}></div>
+    <div>{TagButtons}</div>
+    <div style={{maxWidth: `960px`, margin: `1.45rem`}}></div>
     <div className="projects-container">{Projects}</div>
     </Layout>
   )

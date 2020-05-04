@@ -7,12 +7,46 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 
-const PostsPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const Posts = edges
+const PostsPage = props => {
+  const { data } = props
+  const allPosts = data.allMarkdownRemark.edges
+
+  const emptyQuery = ""
+
+  const [state, setState] = React.useState({
+    filteredData: [],
+    query: emptyQuery,
+  })
+  // Extract to reusable component
+  const handleInputChange = event => {
+    const query = event.target.value
+    const { data } = props
+
+    const posts = data.allMarkdownRemark.edges || []
+
+    const filteredData = posts.filter(post => {
+      const { title, tags } = post.node.frontmatter
+      return (
+        title.toLowerCase().includes(query.toLowerCase()) ||
+        (tags &&
+          tags
+            .join("")
+            .toLowerCase()
+            .includes(query.toLowerCase()))
+      )
+    })
+    setState({
+      query,
+      filteredData,
+    })
+  }
+
+
+  const { filteredData, query } = state
+  const hasSearchResults = filteredData && query !== emptyQuery
+  const posts = hasSearchResults ? filteredData : allPosts
+
+  const Posts = posts
     .filter(edge => !!edge.node.frontmatter.published) // You can filter your posts based on some criteria
     .map(edge =>  <article   
       style={{
@@ -24,6 +58,12 @@ const PostsPage = ({
     <Layout>
     <SEO title="Projects" />
     <h1>Latest Thoughts</h1>
+    <input
+              type="text"
+              aria-label="Search"
+              placeholder="Type to filter posts..."
+              onChange={handleInputChange}
+          />
     <div style={{ maxWidth: `960px`, margin: `1.45rem` }}></div>
     <div>{Posts}</div>
     </Layout>

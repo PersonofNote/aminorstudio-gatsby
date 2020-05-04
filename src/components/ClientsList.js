@@ -5,7 +5,6 @@ const ClientsList =  ( props, { in: inProp } )  => {
     const Clients = props.clients.map(client=> {
         const index = props.clients.indexOf(client)
         const cliImg = client.client.image;
-        console.log(cliImg);
         return(
           <CSSTransition
               key={index}
