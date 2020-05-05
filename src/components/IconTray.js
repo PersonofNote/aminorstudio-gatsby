@@ -3,6 +3,9 @@ import IconGithub from "./icon-components/IconGithub"
 import IconLinkedIn from "./icon-components/IconLinkedIn"
 import IconGooglePlay from "./icon-components/IconGooglePlay"
 import IconWordpress from "./icon-components/IconWordpress"
+import IconPhp from "../components/icon-components/IconPhp"
+import IconLaravel from "../components/icon-components/IconLaravel"
+import IconHeroku from "../components/icon-components/IconHeroku"
 
 const IconTray = ({ icons }) => 
 {
@@ -10,7 +13,11 @@ const IconTray = ({ icons }) =>
         "github": <IconGithub/>,
         "linkedin" : <IconLinkedIn/>,
         "googleplay" : <IconGooglePlay/>,
-        "wordpress" : <IconWordpress/>
+        "wordpress" : <IconWordpress/>,
+        "laravel" : <IconLaravel/>,
+        "heroku" : <IconHeroku/>,
+        "php" : <IconPhp/>
+
     }
     console.log(IconList);
     const Iconset = icons

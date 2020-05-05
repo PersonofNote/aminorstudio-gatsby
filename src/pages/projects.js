@@ -7,26 +7,9 @@ import { graphql } from "gatsby"
 import ProjectContent from "../components/ProjectContent"
 import "../components/projects.less"
 
-// Importing icon list
-import IconGithub from "../components/icon-components/IconGithub"
-import IconLinkedIn from "../components/icon-components/IconLinkedIn"
-import IconGooglePlay from "../components/icon-components/IconGooglePlay"
-import IconWordpress from "../components/icon-components/IconWordpress"
-import IconPhp from "../components/icon-components/IconPhp"
-import IconLaravel from "../components/icon-components/IconLaravel"
-import IconHeroku from "../components/icon-components/IconHeroku"
 
-const tags = ['All','javascript', 'php', 'css', 'github', 'laravel', "heroku", "wordpress", "googleplay"]
 
-const IconList = {
-  "github": <IconGithub/>,
-  "linkedin" : <IconLinkedIn/>,
-  "googleplay" : <IconGooglePlay/>,
-  "wordpress" : <IconWordpress/>,
-  "php" : <IconPhp/>,
-  "laravel" : <IconLaravel/>,
-  "heroku" : <IconHeroku/>
-}
+const tags = ['all','javascript', 'php', 'css', 'github', 'laravel', "heroku", "wordpress", "googleplay", "games", "design", "art"]
 
 const ProjectsPage = props => {
   const { data } = props
@@ -69,7 +52,7 @@ const ProjectsPage = props => {
   const posts = hasSearchResults ? filteredData : allPosts
 
   const TagButtons = tags.map(tag => (
-    <button key={tag} value={tag} onClick={handleInputChange}>{IconList[tag]}</button>
+    <button className='filter-button' key={tag} value={tag === 'all' ? "" : tag} onClick={handleInputChange}>{tag}</button>
   ))
 
   const Projects = posts

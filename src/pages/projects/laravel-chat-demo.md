@@ -4,11 +4,12 @@
 #      title:
 #      image:
 #      description:
+#      coverImage
 #      icons:
-#        - iconset:
-#            icon:
-#            link:
-#            tooltip:
+#        - {icon, link, tooltip}
+#      visible: bool
+#      date: Consider removing this...
+#      tags: []
 posttype: project
 title: Laravel Chat Demo
 slug: /laravel-chat
@@ -19,9 +20,8 @@ icons:
     - { icon: laravel, link: "https://www.google.com", tooltip: "Built with Laravel" }
     - { icon: heroku, link: "http://whispering-stream-64250.herokuapp.com/", tooltip: "Deployed on Heroku" }
 visible: True
-date: 2019-10-10
+date: 2019-11-01
 tags: [php, laravel, on-github, heroku, pusher, full-stack]
 ---
     
-I built a Laravel chat app with a 
-     
+I built a Laravel chat app utilizing Pusher to send chats. This demo was to familizarize myself with Laravel and to practice full-stack development.

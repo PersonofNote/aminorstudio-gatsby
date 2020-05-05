@@ -18,7 +18,17 @@ icons:
     - { icon: github, link: "google.com", tooltip: "See on Google Play" }
 visible: True
 date: 2017-07-01
-tags: ["gamemaker", "google-play", "on-github", "php"]
+tags: ["gamemaker", "googleplay", "on-github", "php", "art", "music"]
 ---
-    This is a writeup of a project. Here I can include extra pictures, links as necessary, etc.
-     
+
+Flight of the PaperWing was my first completed game. I wrote it in Game Maker Language, a C-like language designed for the Game Maker engine. I wanted to make something a little bit different from a regular infinite runner, but also wanted to make sure that I could actually finish the project.
+
+The player moves using the phone's accelerometer. I wrote custom easing functions to get the dive and swoop that I wanted; for example, the dive is a very steep-sloped variation of an ease-in function.
+
+Obstacles are procedurally generated, and difficulty is controlled along a sinewave that increases in slope and amplitude over time, giving the player a rhythm and a pleasing series of difficulty versus breathing room.
+
+I designed and created all of the assets, mechanics and code for this project.
+
+Ultimately, the non-standard movement controls are a bit of a gimmick, but they did achieve the feeling of piloting a paper plane.
+
+Flight of the Paperwing is avaiable for download on the Google Play Store.

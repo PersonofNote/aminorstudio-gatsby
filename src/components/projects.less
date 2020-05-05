@@ -1,14 +1,17 @@
+.filter-button {
+    margin: 0 0.2rem;
+    background: none;
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     list-style: none;
 }
 
 .project-card {
-  box-shadow: 4px 4px 4px 2px lightgray;
-  width: 1fr;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -16,6 +19,7 @@
   text-align: center;
   justify-content: center;
   object-fit: cover;
+  transition: all 200ms;
 }
 
 .icon-tray {
@@ -26,29 +30,19 @@
     padding: 0.5rem;
     height: 48px;
     border-top: 1px solid gray;
-}
-
-.icon {
-    height: 32px;
-    width: 32px;
-    fill: var(--secondary);
-    transition: fill 500ms;
-}
-
-.icon:hover {
-    fill: var(--primary);
-    transition: fill 500ms;
+    .icon {
+        height: 32px;
+        width: 32px;
+        fill: var(--secondary);
+        transition: fill 500ms;
+        &:hover {
+            fill: var(--primary);
+            transition: fill 500ms;
+        }
+    }
 }
 
 
-.icon-tray .icon {
-    height: 32px;
-    width: 32px;
-}
-
-.icon-tray .icon:hover {
-    fill: var(--primary);
-}
 
 .svg-icon {
     height: 32px;
@@ -56,7 +50,9 @@
 }
 
 .project-card:hover {
-    transform: scale(1.1);
+    transform: translate(0,-10px);
+    box-shadow: 4px 4px 4px 2px lightgray;
+    transition: all 200ms;
 }
 
 .project-image {

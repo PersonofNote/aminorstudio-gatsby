@@ -8,9 +8,8 @@ import IconArrow from "../components/icon-components/IconArrow.js"
 
 
 const Header = (props) => {
-  const [scrolling, setScrolling, isOpen, setOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
   const [scrollTop] = useState(0);
-  const toggleOpen = () => setOpen(!isOpen);
 
   useEffect(() => {
     const onScroll = e => {
@@ -21,6 +20,9 @@ const Header = (props) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
+
+  const [isOpen, setOpen] = useState(false);
+  const toggleOpen = () => setOpen(!isOpen);
   return(
     <header>
      <nav id='top-menu' className={`top-menu ${scrolling ? "scrolling" : ""}`}>

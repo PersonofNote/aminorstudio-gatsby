@@ -13,6 +13,7 @@ export default ({ data }) => {
         margin: 'auto'
       }}>
         <h1>{ post.frontmatter.title }</h1>
+    <span>{post.timeToRead}-minute read</span>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -25,6 +26,10 @@ export const query = graphql`
       frontmatter {
         title
         tags
+      }
+      timeToRead
+      internal {
+        content
       }
     }
   }`
