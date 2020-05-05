@@ -65,7 +65,7 @@ const ProjectsPage = props => {
   return (
     <Layout>
     <SEO title="Projects" />
-    <div>{TagButtons}</div>
+    <div className='tag-cloud'>{TagButtons}</div>
     <div style={{maxWidth: `960px`, margin: `1.45rem`}}></div>
     <div className="projects-container">{Projects}</div>
     </Layout>

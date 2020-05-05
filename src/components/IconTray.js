@@ -21,7 +21,11 @@ const IconTray = ({ icons }) =>
     }
     console.log(IconList);
     const Iconset = icons
-        .map(icon => <a key={icon.index} aria-label={icon.tooltip} href={icon.link} alt={icon.tooltip}> {IconList[icon.icon]}  </a>)
+        .map(icon => 
+                <div className='icon-wrap'>
+                <a key={icon.index} aria-label={icon.tooltip} href={icon.link} alt={icon.tooltip}> {IconList[icon.icon]} </a>
+                <div className="project-tooltip">{icon.tooltip}</div>
+                </div>)
     return (
     <div className="icon-tray" >
         {Iconset}

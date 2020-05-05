@@ -1,6 +1,16 @@
+.tag-cloud {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .filter-button {
     margin: 0 0.2rem;
     background: none;
+    border: 1px solid lightgray;
+    color: gray;
 }
 
 .projects-container {
@@ -20,6 +30,14 @@
   justify-content: center;
   object-fit: cover;
   transition: all 200ms;
+  &:hover {
+    transform: translate(0,-10px);
+    box-shadow: 4px 4px 4px 2px lightgray;
+    transition: all 200ms;
+  }
+  h2 {
+      color: #3e272b;
+  }
 }
 
 .icon-tray {
@@ -42,6 +60,13 @@
     }
 }
 
+.icon-wrap{
+    position: relative;
+}
+
+.icon-wrap:hover>.project-tooltip {   
+        display: block;
+    }
 
 
 .svg-icon {
@@ -49,14 +74,10 @@
     width: 32px;
 }
 
-.project-card:hover {
-    transform: translate(0,-10px);
-    box-shadow: 4px 4px 4px 2px lightgray;
-    transition: all 200ms;
-}
 
 .project-image {
     min-height: 200px;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -76,24 +97,22 @@
     color: white;
     display: none;
     z-index: 10;
-    animation: tooltip 0.3s cubic-bezier();
+    /*animation: tooltip 0.3s cubic-bezier();*/
+    &:after {
+        content:'';
+        position: absolute;
+        top: calc(100%-2px);
+        left: 15%;
+        width: 0;
+        height: 0;
+        border-top: solid 10px orange;
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+    }
+  
 }
 
-.project-tooltip:after {
-    content:'';
-    position: absolute;
-    top: calc(100%-2px);
-    left: 15%;
-    width: 0;
-    height: 0;
-    border-top: solid 10px orange;
-    border-left: solid 10px transparent;
-    border-right: solid 10px transparent;
-}
 
-.icon-span:hover > .project-tooltip {
-    display: block;
-}
 
 @supports not (display: grid) {
     .projects-container {
@@ -110,7 +129,29 @@
 
 @media (min-width: 750px) {
     .projects-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
   }
+
+
+/* Animation */
+
+@keyframes tooltip {
+    0% {
+        opacity: 0;
+        transform: scale(0.1, 0.1);
+        transform: translate(0, 60px);
+    }
+    75% {
+        opacity: 0.9;
+        transform: scale(1.2, 1.2);
+    }
+    80% {
+        transform: scale(1, 0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
