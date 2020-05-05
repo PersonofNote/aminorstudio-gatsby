@@ -25,7 +25,8 @@ const Header = (props) => {
   const toggleOpen = () => setOpen(!isOpen);
   return(
     <header>
-     <nav id='top-menu' className={`top-menu ${scrolling ? "scrolling" : ""}`}>
+      <div className={`top-menu-anchor ${scrolling ? "scrolling" : ""}`}></div>
+      <nav id='top-menu' className={`top-menu ${scrolling ? "scrolling" : ""}`}>
         <div className="logo-wrap">
         <a href="/"><img className="site-logo" alt="site-logo" src={siteLogo}></img></a>
         <div onClick={toggleOpen} className={`toggle-wrap ${isOpen ? "open" : ""}`}>

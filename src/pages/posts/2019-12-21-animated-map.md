@@ -2,7 +2,7 @@
 posttype: post
 date: 2019-12-21
 author: A Person of Note
-title: Animated Map
+title: Animated Map with D3js
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
 tags: [personal, introduction]
