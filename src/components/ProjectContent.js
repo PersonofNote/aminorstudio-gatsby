@@ -7,9 +7,9 @@ const ProjectContent = ({ content }) =>
     return (
     <div>
         <Link to={content.fields.slug}>
-        <h2>{content.frontmatter.title}</h2>
+        <span className="shrink"><h2>{content.frontmatter.title}</h2></span>
         </Link>
-        <div>{content.frontmatter.description}</div>
+        <div className="content">{content.frontmatter.description}</div>
         <IconTray icons={content.frontmatter.icons} />
     </div>
 )

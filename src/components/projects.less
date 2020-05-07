@@ -35,8 +35,15 @@
     box-shadow: 4px 4px 4px 2px lightgray;
     transition: all 200ms;
   }
+
   h2 {
+      max-width: 100%;
       color: #3e272b;
+      display: inline-flex;
+      height: auto;
+  }
+  .content {
+    height: 8rem;
   }
 }
 
@@ -48,6 +55,10 @@
     padding: 0.5rem;
     height: 48px;
     border-top: 1px solid gray;
+    position: absolute;
+    bottom: 0;
+    right: 6px;
+    left: 6px;
     .icon {
         height: 32px;
         width: 32px;
@@ -76,8 +87,8 @@
 
 
 .project-image {
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 300px;
+    max-height: 300px;
     object-fit: cover;
 }
 
@@ -131,7 +142,11 @@
     .projects-container {
         grid-template-columns: repeat(3, 1fr);
     }
-
+    .project-image {
+        min-height: 200px;
+        max-height: 200px;
+        object-fit: cover;
+    }
   }
 
 

@@ -4,7 +4,6 @@ import { Transition,  CSSTransition, TransitionGroup, } from 'react-transition-g
 const ClientsList =  ( props, { in: inProp } )  => {
     const Clients = props.clients.map(client=> {
         const index = props.clients.indexOf(client)
-        const cliImg = client.client.image;
         return(
           <CSSTransition
               key={index}
@@ -12,7 +11,7 @@ const ClientsList =  ( props, { in: inProp } )  => {
               classNames="cli-anim">
             <section key={index} className="client-section">
                 <a href={client.client.link} >
-                    <img src={require(`../images/${client.client.image}`)} alt={client.client.name} className="client-logo"></img>
+                    <img src={require(`../images/${client.client.image}`)} title={client.client.name} alt={client.client.name} className="client-logo"></img>
                 </a>
             </section>
             </CSSTransition>

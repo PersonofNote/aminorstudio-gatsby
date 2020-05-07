@@ -40,6 +40,24 @@
     transform: scale(1,1);
 }
 
+.section-tech {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tech {
+    width: 100%;
+    padding: 0.5rem;
+    .icon {
+        height: 72px;
+        width: 72px;
+        padding: 0.3rem;
+    }
+    border: 1px solid blue;
+}
+
 @supports not (display: grid) {
     .clients-container {
         display: flex;
@@ -59,3 +77,9 @@
     }
 
   }
+
+@media (min-width: 735px) {
+    .tech {
+        width: 33%;
+    }
+}

@@ -25,10 +25,6 @@ const mainMenulinks = [
     "name": "Projects"
   },
   {
-    "link": "/bits",
-    "name": "Bits"
-  },
-  {
     "link": "/posts",
     "name": "Thoughts"
   }

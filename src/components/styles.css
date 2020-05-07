@@ -67,6 +67,18 @@ body {
     margin: auto;
 }
 
+.front-page-icons svg {
+    height: 32px;
+    width: 32px;
+    fill: var(--secondary);
+    transition: all 250ms;
+}
+
+.front-page-icons svg:hover {
+    fill: var(--primary);
+    transition: all 250ms;
+}
+
 
 /* Posts */
 .featured-post-image {
