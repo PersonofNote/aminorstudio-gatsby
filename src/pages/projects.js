@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 //import FilterContent from "../components/Filtercontent"
 import ProjectContent from "../components/ProjectContent"
 import "../components/projects.less"
@@ -52,22 +53,34 @@ const ProjectsPage = props => {
   const posts = hasSearchResults ? filteredData : allPosts
 
   const TagButtons = tags.map(tag => (
-    <button className='filter-button' key={tag} value={tag === 'all' ? "" : tag} onClick={handleInputChange}>{tag}</button>
+    <button className='filter-button' key={tags.indexOf(tag)} value={tag === 'all' ? "" : tag} onClick={handleInputChange}>{tag}</button>
   ))
-
+  
   const Projects = posts
       .filter(edge => !!edge.node.frontmatter.visible) 
-      .map(edge =>  <article  style={{position: `relative`}} key={edge.node.title} className="project-card">
-        <Img className="project-image" fluid={edge.node.frontmatter.coverImage.childImageSharp.fluid} />
-        <ProjectContent key={edge.node.id} content={edge.node}></ProjectContent>
-        </article>)
+      .map(edge =>  
+        <CSSTransition key={`project-${posts.indexOf(edge)}`}
+          in={true}
+          appear={true}
+          timeout={500 + (posts.indexOf(edge) * 100)}
+          classNames={"popup"}
+        >
+          <div 
+            className="anim-wrap"
+          >
+            <div className="project-card">
+            <Img className="project-image" fluid={edge.node.frontmatter.coverImage.childImageSharp.fluid} />
+            <ProjectContent key={posts.indexOf(edge)} content={edge.node} ></ProjectContent>
+            </div>
+          </div>
+        </CSSTransition>)
 
   return (
     <Layout>
     <SEO title="Projects" />
     <div className='tag-cloud'>{TagButtons}</div>
     <div style={{maxWidth: `960px`, margin: `1.45rem`}}></div>
-    <div className="projects-container">{Projects}</div>
+    <TransitionGroup className="projects-container">{Projects}</TransitionGroup>
     </Layout>
   )
 }

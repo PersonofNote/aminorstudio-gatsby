@@ -26,6 +26,7 @@
     }
 }
 
+
 .top-menu {
     position: absolute;
     top: 0;
@@ -102,10 +103,14 @@
         }
     }
 
+    @media(max-width: 735px) {
+        max-height: 6rem;
+    }
+
     &.scrolling { 
         position: fixed;
         top: 0;
-        @media (max-width: 768px) {
+        @media (max-width: 735px) {
             background-color: white;
             box-shadow: @boxShadowbottom;
             .logo-wrap {
@@ -124,6 +129,7 @@
         }
         /* Only apply dropdown styles on large screens */
         @media (min-width: 768px) {
+            width: 80px;
             .toggle-wrap {
                 svg {
                     opacity: 1;

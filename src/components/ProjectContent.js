@@ -8,8 +8,8 @@ const ProjectContent = ({ content }) =>
     <div>
         <Link to={content.fields.slug}>
         <span className="shrink"><h2>{content.frontmatter.title}</h2></span>
-        </Link>
         <div className="content">{content.frontmatter.description}</div>
+        </Link>
         <IconTray icons={content.frontmatter.icons} />
     </div>
 )

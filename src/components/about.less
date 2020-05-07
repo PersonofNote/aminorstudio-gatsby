@@ -27,18 +27,22 @@
 
 .cli-anim-appear {
     opacity: 0;
-    transform: scale(0.5,0.5);
+    transform: scale(0.2,0.2);
+    
+}
+
+.cli-anim-appear-active {
+    opacity: 1;
+    transform: scale(1,1);
+    transition: all 400ms cubic-bezier(0.865, 1.595, 0.845, 0.840);
 }
 
 .cli-anim-enter {
-    opacity: 0;
-    transform: scale(0.5,0.5);
-}
-
-.cli-anim-done {
     opacity: 1;
     transform: scale(1,1);
+    transition: all 200ms linear;
 }
+
 
 .section-tech {
     display: flex;
@@ -55,7 +59,6 @@
         width: 72px;
         padding: 0.3rem;
     }
-    border: 1px solid blue;
 }
 
 @supports not (display: grid) {

@@ -19,11 +19,10 @@ const IconTray = ({ icons }) =>
         "php" : <IconPhp/>
 
     }
-    console.log(IconList);
     const Iconset = icons
         .map(icon => 
-                <div className='icon-wrap'>
-                <a key={icon.index} aria-label={icon.tooltip} href={icon.link} alt={icon.tooltip}> {IconList[icon.icon]} </a>
+                <div key={icons.indexOf(icon)} className='icon-wrap'>
+                <a aria-label={icon.tooltip} href={icon.link} alt={icon.tooltip}> {IconList[icon.icon]} </a>
                 <div className="project-tooltip">{icon.tooltip}</div>
                 </div>)
     return (
