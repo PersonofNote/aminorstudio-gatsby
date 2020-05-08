@@ -142,6 +142,12 @@
                         transition: all @animDurationstandard cubic-bezier(0.680, -0.550, 0.265, 1.550)
                     }
                 }
+                &:focus-within{
+                    svg {
+                        transform: rotate(90deg) scale(1);
+                        transition: all @animDurationstandard cubic-bezier(0.680, -0.550, 0.265, 1.550)
+                    }
+                }
             }
             .menu-links {
                 position: absolute;
@@ -170,6 +176,14 @@
                     transition-duration: @animDurationhalf;
                     transition-delay: -250ms;
                     transition-property: top;
+                }
+                &:focus-within {       
+                        top: 100%;
+                        opacity: 1;
+                        transition-duration: @animDurationhalf;
+                        transition-delay: -250ms;
+                        transition-property: top;
+                    
                 }
             }
         }

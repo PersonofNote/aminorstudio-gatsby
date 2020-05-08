@@ -21,6 +21,11 @@ import IconBootstrap from "../components/icon-components/IconBootstrap"
 import IconTailwind from "../components/icon-components/IconTailwind"
 import IconCSS3 from "../components/icon-components/IconCSS3"
 import IconHTML from "../components/icon-components/IconHTML"
+import IconDrupal from "../components/icon-components/IconDrupal"
+import IconApache from "../components/icon-components/IconApache"
+import IconPython from "../components/icon-components/IconPython"
+import IconAWS from "../components/icon-components/IconAWS"
+import IconGoogleCloud from "../components/icon-components/IconGoogleCloud"
 
 const clientsList = [
   {
@@ -79,6 +84,13 @@ const clientsList = [
     "link": ""
     }
   },
+  {
+    client : {
+    "name": "The Finishing Trades Institute",
+    "image": "fti-logo.png",
+    "link": "https://ifti.edu/"
+    }
+  },
 ]
 
 const AboutPage = () =>{
@@ -106,18 +118,26 @@ const AboutPage = () =>{
       </div>
       <div className="tech">
         <h3> Python </h3>
-          Python
+          <IconPython/>
           <IconDjango/>
       </div>
       <div className="tech">
         <h3> PHP </h3>
           <IconLaravel/>
           <IconWordpress/>
+          <IconDrupal/>
       </div>
       <div className="tech">
-        <h3> Development </h3>
+        <h3> Development Tools </h3>
           <IconWebpack/>
           <IconSass/>
+          <IconApache/>
+      </div>
+      <div className="tech">
+        <h3> Cloud Deployment </h3>
+          <IconAWS/>
+          <IconGoogleCloud/>
+          <IconHeroku/>
       </div>
     </section>
 

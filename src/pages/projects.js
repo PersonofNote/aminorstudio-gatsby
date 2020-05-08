@@ -68,10 +68,17 @@ const ProjectsPage = props => {
           <div 
             className="anim-wrap"
           >
+            <CSSTransition
+              in={true}
+              appear={true}
+              timeout={500}
+              classNames={"fade"}
+            >
             <div className="project-card">
             <Img className="project-image" fluid={edge.node.frontmatter.coverImage.childImageSharp.fluid} />
             <ProjectContent key={posts.indexOf(edge)} content={edge.node} ></ProjectContent>
             </div>
+            </CSSTransition>
           </div>
         </CSSTransition>)
 

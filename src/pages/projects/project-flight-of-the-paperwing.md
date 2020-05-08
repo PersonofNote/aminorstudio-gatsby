@@ -13,9 +13,9 @@ posttype: project
 title: Flight of the Paperwing
 slug: /flight-of-the-paperwing
 coverImage: ../../images/paperwing.png
-description: Made this game
+description: Procedurally generated infinite flyer with accelerometer-based controls
 icons:
-    - { icon: github, link: "google.com", tooltip: "See on Google Play" }
+    - { icon: googleplay, link: "google.com", tooltip: "See on Google Play" }
 visible: True
 date: 2017-07-01
 tags: ["gamemaker", "googleplay", "on-github", "php", "art", "music"]

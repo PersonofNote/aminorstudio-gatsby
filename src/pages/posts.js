@@ -52,7 +52,7 @@ const PostsPage = props => {
       style={{
       margin: `0 auto`,
       padding: `1.0875rem 1.45rem`,
-    }}><Img className="featured-post-image" fluid={edge.node.frontmatter.coverImage.childImageSharp.fluid} /><PostLink key={edge.node.id} post={edge.node}></PostLink></article>)
+    }}><PostLink key={edge.node.id} post={edge.node}></PostLink></article>)
 
   return (
     <Layout>
@@ -83,6 +83,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             published
+            tags
             coverImage {
               childImageSharp {
                 fluid(maxWidth: 800) {

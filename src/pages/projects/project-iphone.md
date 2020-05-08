@@ -10,10 +10,10 @@
 #            link:
 #            tooltip:
 posttype: project
-title: Lorem Ipsum
+title: Iphone-11 Launch
 slug: /iphone-11
 description: Front-end development for the iPhone-11 launch in Cupertino, in September 2019
-coverImage: ../../images/sketchpad.png
+coverImage: ../../images/iphone-11-invite.jpg
 icons:
     - { icon: googleplay, link: "google.com", tooltip: "See on Google Play" }
     - { icon: github, link: "https://www.google.com", tooltip: "See the code on Github" }
