@@ -14,7 +14,7 @@ posttype: project
 title: React/Wordpress SPA
 slug: /react-wp-spa
 description: Sample Single-Page React App pulling from the Wordpress API
-coverImage: ../../images/sketchpad.png
+coverImage: ../../images/reactwp.png
 icons:
     - { icon: github, link: https://github.com/PersonofNote/wp-react-demo, tooltip: "See the code on Github" }
     - { icon: react, link: "https://www.react.com", tooltip: "Built with React" }

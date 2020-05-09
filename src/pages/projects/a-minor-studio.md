@@ -14,7 +14,7 @@ posttype: project
 title: A Minor Studio
 slug: /a-minor-studio
 description: This website! Built with Gatsby/React
-coverImage: ../../images/sketchpad.png
+coverImage: ../../images/gatsbyminorstudio.png
 icons:
     - { icon: github, link: https://github.com/PersonofNote/wp-react-demo, tooltip: "See the code on Github" }
     - { icon: gatsby, link: "https://www.gatsby.com", tooltip: "Built with Gatsby/React" }
@@ -23,7 +23,7 @@ date: 2020-05-05
 tags: [ on-github, react, javascript, gatsby, grahql, design ]
 ---
     
-I built this website in part to practice modern cloud deployment, and to learn GraphQL. The site was designed and built by me, and remains under development.
+I built this website in part to practice modern cloud deployment and to learn GraphQL. The site was designed and built by me, and remains under development.
 
 It took me a little while to wrap my head around GraphQL versus the REST API I am familiar with. Throughout this project I have come to appreciate the granularity of control that GraphQL gives me, and am excited to keep using it in future projects.
 

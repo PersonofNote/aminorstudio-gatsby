@@ -12,7 +12,7 @@ Accessibility is becoming a highest-priority concern in web development, which i
 
 This means considerations like not hiding information from screen readers and keyboard navigation via hidden or display:none attributes. But every site seems to have a dropdown menu. And if you can't hide elements, how do dropdowns work?
 
-There's a CSS selector that I don't see used in dropdown menus very often, which is surprising to me. A shocking number of sites just don't even attempt it. It's become a bit of a habit of mine to tab through the top menu whenever I'm on a site with a header dropdown, just to check. Try it, and you'll be amazed. (Well, mildly interested, probably.)
+There's a CSS selector that I don't see used in dropdown menus very often, which is surprising to me. A shocking number of sites just don't even attempt it. It's become a bit of a habit of mine to tab through the top menu whenever I'm on a site with a header dropdown, just to check. Try it, and you'll be amazed. (Disclaimer: Dependent on your threshold for amazement. "Mildly interested" is also a likely result.)
 
 The selector is focus-within, and it works the same as hover or active. Just add 
 

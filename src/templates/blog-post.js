@@ -17,7 +17,7 @@ export default ({ data }) => {
                    )
   return (
     <Layout>
-      <Img className="featured-post-image" fluid={post.frontmatter.coverImage.childImageSharp.fluid} />
+     {/* <Img className="featured-post-image" fluid={post.frontmatter.coverImage.childImageSharp.fluid} /> */}
       <div style={{
         maxWidth: 750,
         margin: 'auto'
