@@ -12,11 +12,11 @@
 posttype: project
 title: Behold the Bubble
 slug: /behold-the-bubble
-description: Simple News App designed to juxtapose headlines with different biases
-coverImage: ../../images/self-portrait.png
+description: Simple News App designed to juxtapose headlines with different biases. May load slowly due to free hosting tier.
+coverImage: ../../images/comparative-news-app.png
 icons:
-    - { icon: "googleplay", link: "google.com", tooltip: "See on Google Play" }
-    - { icon: "github", link: "google.com", tooltip: "See the code on Github" }
+    - { icon: "zeit", link: "https://csb-48mr22qly0-dzwnnqsnfo.now.sh/", tooltip: "See on Zeit" }
+    - { icon: "github", link: "https://github.com/PersonofNote/behold-the-bubble", tooltip: "See the code on Github" }
 visible: True
 date: 2018-10-20
 tags: [react, news, api, javascript]

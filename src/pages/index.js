@@ -11,9 +11,13 @@ import IconLinkedIn from "../components/icon-components/IconLinkedIn"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div id="intro-image"></div>
-    <p className="center">Front end developer specializing in thoughtful, interactive user experiences.</p>
-    <div className="front-page-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a></div>
+    <div style={{
+      height: `65vh`
+    }}>
+      <div id="intro-image"></div>
+      <p className="center">Front end developer specializing in thoughtful, interactive user experiences.</p>
+      <div className="front-page-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a></div>
+    </div>
   </Layout>
 )
 

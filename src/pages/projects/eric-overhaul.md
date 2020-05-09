@@ -17,7 +17,7 @@ coverImage: ../../images/self-portrait.png
 icons:
     - { icon: "googleplay", link: "google.com", tooltip: "See on Google Play" }
     - { icon: "github", link: "google.com", tooltip: "See the code on Github" }
-visible: True
+visible: False
 date: 2019-06-20
 tags: [blender, art, community, creative, pixel art]
 # TODO potentially integrate tags and icons in some way to foolproof it a bit. Although I want to be able to

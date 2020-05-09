@@ -7,7 +7,9 @@ export default ({ data }) => {
   const projectPost = data.markdownRemark
   return (
     <Layout>
-      <div>
+      <div style={{
+        minHeight: `65vh`
+      }}>
         <h1>{ projectPost.frontmatter.title }</h1>
         <div dangerouslySetInnerHTML={{ __html: projectPost.html }} />
       </div>

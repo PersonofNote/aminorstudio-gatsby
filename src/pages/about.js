@@ -26,6 +26,8 @@ import IconApache from "../components/icon-components/IconApache"
 import IconPython from "../components/icon-components/IconPython"
 import IconAWS from "../components/icon-components/IconAWS"
 import IconGoogleCloud from "../components/icon-components/IconGoogleCloud"
+import IconGatsby from "../components/icon-components/IconGatsby"
+
 
 const clientsList = [
   {
@@ -49,13 +51,13 @@ const clientsList = [
       "link" : "https://www.mealsonwheels.org"
     }
     } ,
-  {
-    client : {
-    "name": "IB.TC",
-    "image": "ibtc-logo.png",
-    "link" : "https://ib.tc"
-    }
-  },
+    {
+      client : {
+      "name": "The Finishing Trades Institute",
+      "image": "fti-logo.png",
+      "link": "https://ifti.edu/"
+      }
+    },
   {
     client : {
     "name" : "The U.S. Grains Council",
@@ -65,7 +67,7 @@ const clientsList = [
   },
   {
     client : {
-    "name": "The American Home Appliances Peeps",
+    "name": "Association of Home Appliance Manufacturers",
     "image": "AHAM-Logo_Transparent.png",
     "link": "https://blog.aham.org"
     }
@@ -86,11 +88,19 @@ const clientsList = [
   },
   {
     client : {
-    "name": "The Finishing Trades Institute",
-    "image": "fti-logo.png",
-    "link": "https://ifti.edu/"
+    "name": "IB.TC",
+    "image": "ibtc-logo.png",
+    "link" : "https://ib.tc"
     }
   },
+  {
+    client : {
+    "name": "Spacepost",
+    "image": "spacepost.png",
+    "link" : "https://spacepost.io"
+    }
+  },
+ 
 ]
 
 const AboutPage = () =>{
@@ -108,6 +118,7 @@ const AboutPage = () =>{
           <IconJs/>
           <IconReact/>
           <IconD3/>
+          <IconGatsby/>
       </div>
       <div className="tech">
         <h3> HTML/CSS </h3>

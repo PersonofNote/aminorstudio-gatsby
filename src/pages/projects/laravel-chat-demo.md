@@ -14,7 +14,7 @@ posttype: project
 title: Laravel Chat Demo
 slug: /laravel-chat
 description: Bare bones chat app demo with user registration.
-coverImage: ../../images/sketchpad.png
+coverImage: ../../images/chat.png
 icons:
     - { icon: github, link: https://github.com/PersonofNote/laravel-chat, tooltip: "See the code on Github" }
     - { icon: laravel, link: "https://www.laravel.com", tooltip: "Built with Laravel" }

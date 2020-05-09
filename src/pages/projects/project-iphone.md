@@ -18,7 +18,7 @@ icons:
     - { icon: googleplay, link: "google.com", tooltip: "See on Google Play" }
     - { icon: github, link: "https://www.google.com", tooltip: "See the code on Github" }
     - { icon: wordpress, link: "https://www.google.com", tooltip: "Powered by Wordpress" }
-visible: True
+visible: False
 date: 2019-09-10
 tags: [css, html, javascript]
 ---

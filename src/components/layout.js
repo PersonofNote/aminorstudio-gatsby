@@ -9,6 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import IconGithub from "./icon-components/IconGithub"
+import IconLinkedIn from "./icon-components/IconLinkedIn"
+import IconTwitter from "./icon-components/IconTwitter"
+
 import Header from "./header"
 import "./variables.less"
 import "./layout.css"
@@ -26,7 +30,7 @@ const mainMenulinks = [
   },
   {
     "link": "/posts",
-    "name": "Thoughts"
+    "name": "Posts"
   }
 ]
 
@@ -54,9 +58,16 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} A Minor Studio
+        <main style={{
+          marginTop: `1rem`
+        }}>{children}</main>
+        <footer style={{
+          display: `flex`,
+          flexDirection: `row`,
+          padding: `0.8rem`,
+          justifyContent: `flex-start`
+        }}>
+          © {new Date().getFullYear()} A Minor Studio <div className="footer-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a></div>
         </footer>
       </div>
     </>

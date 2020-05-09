@@ -97,6 +97,25 @@ footer {
     border-top: 1px solid gray;
 }
 
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-icons svg {
+    height: 16px;
+    width: 16px;
+    margin: 0 0.4rem;
+    fill: var(--secondary);
+    transition: all 250ms;
+}
+
+.footer-icons svg:hover {
+    fill: var(--primary);
+    transition: all 250ms;
+}
+
 /* Animations */
 
 @keyframes tooltip {

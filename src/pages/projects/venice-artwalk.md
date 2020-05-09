@@ -12,17 +12,13 @@
 posttype: project
 title: Lorem Ipsum
 slug: /venice-artwalk
-description: Augmented-reality art show with models made in blender
-coverImage: ../../images/self-portrait.png
+description: Augmented-reality art show with hand-drawn pixel art animations and simple 3-d models
+coverImage: ../../images/gallery.png
 icons:
-    - { icon: "googleplay", link: "google.com", tooltip: "See on Google Play" }
-    - { icon: "github", link: "google.com", tooltip: "See the code on Github" }
+    - { icon: "", link: "", tooltip: "" }
 visible: True
-date: 2018-03-20
+date: 2018-05-20
 tags: [blender, art, community, creative, pixel art]
-# TODO potentially integrate tags and icons in some way to foolproof it a bit. Although I want to be able to
-# add tags that don't have icons, so maybe not.
 ---
-    
-      
+    In 2018, I showed at the annual Venice Art Crawl at The Wndow warehouse in Venice Beach. I created several augmented-reality pixel-art pieces for an exhibit about the intersection of art and tech. Spectators downloaded an app and used their phones to view an animated version of the image on the wall.
      

@@ -56,8 +56,8 @@ const PostsPage = props => {
 
   return (
     <Layout>
-    <SEO title="Projects" />
-    <h1>Latest Thoughts</h1>
+    <SEO title="Posts" />
+    <h1>Latest Posts</h1>
     <input
               type="text"
               aria-label="Search"

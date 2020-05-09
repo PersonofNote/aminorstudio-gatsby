@@ -6,6 +6,9 @@ import IconWordpress from "./icon-components/IconWordpress"
 import IconPhp from "../components/icon-components/IconPhp"
 import IconLaravel from "../components/icon-components/IconLaravel"
 import IconHeroku from "../components/icon-components/IconHeroku"
+import IconZeit from "../components/icon-components/IconZeit"
+import IconReact from "../components/icon-components/IconReact"
+import IconGatsby from "../components/icon-components/IconGatsby"
 
 const IconTray = ({ icons }) => 
 {
@@ -16,8 +19,10 @@ const IconTray = ({ icons }) =>
         "wordpress" : <IconWordpress/>,
         "laravel" : <IconLaravel/>,
         "heroku" : <IconHeroku/>,
-        "php" : <IconPhp/>
-
+        "php" : <IconPhp/>,
+        "zeit": <IconZeit/>,
+        "react" : <IconReact/>,
+        "gatsby": <IconGatsby/>
     }
     const Iconset = icons.map(icon => 
                 <div key={icons.indexOf(icon)} className='icon-wrap'>
