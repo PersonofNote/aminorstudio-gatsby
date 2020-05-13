@@ -2,7 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 const MenuLinks = ( {links} ) => {
-    var pagePath = window.location.href.split("/")
+    if (typeof window !== `undefined`) {
+        var pagePath = window.location.href.split("/")
+    } else pagePath = "/"
     var currentPage = pagePath[pagePath.length-1]
     return links.map(link => {
                 if (link.name.toLowerCase() === currentPage) {

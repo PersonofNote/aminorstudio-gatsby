@@ -18,6 +18,7 @@ coverImage: ../../images/gatsbyminorstudio.png
 icons:
     - { icon: github, link: https://github.com/PersonofNote/wp-react-demo, tooltip: "See the code on Github" }
     - { icon: gatsby, link: "https://www.gatsby.com", tooltip: "Built with Gatsby/React" }
+    - { icon: aws, link: "https://www.aws.com", tooltip: "Deployed with AWS" }
 visible: True
 date: 2020-05-05
 tags: [ on-github, react, javascript, gatsby, grahql, design ]

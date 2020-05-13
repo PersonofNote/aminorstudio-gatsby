@@ -15,10 +15,10 @@ slug: /flight-of-the-paperwing
 coverImage: ../../images/paperwing.png
 description: Procedurally generated infinite flyer with accelerometer-based controls
 icons:
-    - { icon: googleplay, link: "google.com", tooltip: "See on Google Play" }
+    - { icon: googleplay, link: "https://play.google.com/store/apps/details?id=com.AMinorStudio.Flight_of_the_Paperwing&hl=en_US", tooltip: "See on Google Play" }
 visible: True
 date: 2017-07-01
-tags: ["gamemaker", "googleplay", "on-github", "php", "art", "music"]
+tags: ["gamemaker", "googleplay", "on-github", "games", "art", "music"]
 ---
 
 Flight of the PaperWing was my first completed game. I wrote it in Game Maker Language, a C-like language designed for the Game Maker engine. I wanted to make something a little bit different from a regular infinite runner, but also wanted to make sure that I could actually finish the project.

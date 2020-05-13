@@ -10,6 +10,20 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "aminorstudio.com",
+        protocol: "https",
+        hostname: "aminorstudio.com"
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-165733204-1",
+      },
+    },
+    {
       resolve: "svg-react-loader",
       options: {
         rule: {

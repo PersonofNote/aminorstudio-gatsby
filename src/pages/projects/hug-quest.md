@@ -15,7 +15,7 @@ slug: /hug-quest
 coverImage: ../../images/Maze.png
 description: Procedurally Generated Maze Game for two players, or a single player and a simple AI. Find the other entity and hug them.
 icons:
-    - { icon: github, link: "google.com", tooltip: "See on Google Play" }
+    - { icon: itchio, link: "https://a-person-of-note.itch.io/hug-quest-version-01", tooltip: "Available for Windows on Itch.io" }
 visible: True
 date: 2017-07-01
 tags: [gamemaker, art, animation, artificial intelligence, pathfinding algorithms, design, games]

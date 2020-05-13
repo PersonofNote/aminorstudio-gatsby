@@ -9,6 +9,9 @@ import IconHeroku from "../components/icon-components/IconHeroku"
 import IconZeit from "../components/icon-components/IconZeit"
 import IconReact from "../components/icon-components/IconReact"
 import IconGatsby from "../components/icon-components/IconGatsby"
+import IconItchIo from "../components/icon-components/IconItchIo"
+import IconAWS from "../components/icon-components/IconAWS"
+import IconLink from "../components/icon-components/IconLink"
 
 const IconTray = ({ icons }) => 
 {
@@ -22,7 +25,10 @@ const IconTray = ({ icons }) =>
         "php" : <IconPhp/>,
         "zeit": <IconZeit/>,
         "react" : <IconReact/>,
-        "gatsby": <IconGatsby/>
+        "gatsby": <IconGatsby/>,
+        "itchio": <IconItchIo/>,
+        "aws": <IconAWS/>,
+        "link": <IconLink/>
     }
     const Iconset = icons.map(icon => 
                 <div key={icons.indexOf(icon)} className='icon-wrap'>

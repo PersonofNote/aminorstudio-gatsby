@@ -1,26 +1,25 @@
 .clients-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto 1fr;
-    grid-gap: 0.1rem;
-    margin-bottom: 2rem;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
     list-style: none;
 }
 
 .client-section {
-    height: 10rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     & a {
-        padding: 0.25rem;
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         & .client-logo {
-        height: 90%;
-        object-fit: contain;
+        height: 100%;
+        object-fit: scale-down;
         }
     }
 }
@@ -55,8 +54,8 @@
     width: 100%;
     padding: 0.5rem;
     .icon {
-        height: 72px;
-        width: 72px;
+        height: 64px;
+        width: 64px;
         padding: 0.3rem;
         fill: var(--secondary);
     }
@@ -76,13 +75,14 @@
 /* Media queries */
 
 @media (min-width: 400px) {
-    .clients-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  
 
   }
 
 @media (min-width: 735px) {
+    .clients-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
     .tech {
         width: 33%;
     }

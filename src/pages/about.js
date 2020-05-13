@@ -40,7 +40,7 @@ const clientsList = [
    {
     client : {
     "name" : "Apple",
-    "image" : "iphone-11-invite.jpg",
+    "image" : "apple-logo.png",
     "link" : "https://www.apple.com"
   }
   },
