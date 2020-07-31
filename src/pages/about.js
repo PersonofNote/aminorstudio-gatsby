@@ -32,6 +32,20 @@ import IconGatsby from "../components/icon-components/IconGatsby"
 const clientsList = [
   {
     client: {
+      "name": "Showtime",
+      "image": "showtime.png",
+      "link": "https://www.sho.com/"
+    }
+  },
+  {
+    client: {
+      "name": "Comcast Xfinity",
+      "image": "comcast-xfinity-logo.jpg",
+      "link": "https://www.sho.com/"
+    }
+  },
+  {
+    client: {
       "name" : "US Diplomacy Museum",
       "image" : "state-department-seal.png",
       "link" : "https://www.diplomacy.gov"
