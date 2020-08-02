@@ -21,12 +21,8 @@ date: 2020-07-20
 tags: [laravel, html, css, javascript, php,]
 ---
 
-![Penny Dreadful Cover](../../images/penny-cover.png)
+This project was two branded sweepstakes games in association with Showtime, Comcast Xfinity, and other clients. The games are full-stack Laravel apps where a user clicks on the appropriate location on the map according to provided hints in order to enter a sweepstakes. I mostly did front end on this project; some of the infrastructre was carried over from other projects, and the only backend work I did involved hooking up a couple of new routes.
 
-This project was two branded sweepstakes games in association with Showtime, Comcast Xfinity, and other clients. The games are full-stack Laravel apps where a user clicks on the appropriate location on the map according to provided hints. I mostly did front end on this project; some of the infrastructre was carried over from other projects, and the only backend work I did involved hooking up a couple of new routes.
-
-![Penny Dreadful Map](../../images/penny-map.png)
-![Billions Map](../../images/billions-map.png)
 
 I have grouped these two games together because they are essentially the same game, but there were a few interesting differences in ending presentation and logic, such as one game having an extra reward screen and the other having two endings.
 
