@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `A Minor Studio`,
-    description: `Personal Site and Portfolio for Jessica Martin`,
+    description: `Personal Site and Full-Stack Portfolio for Jessica Martin`,
     author: `A Person of Note`,
     logo: `src/images/logo.png`,
   },
@@ -47,6 +47,38 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-remark-images`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          posts: require.resolve("./src/templates/blog-post.js"),
+          default: require.resolve("./src/templates/project-post.js"),
+        },
+        plugins: [`gatsby-remark-images`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 400,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

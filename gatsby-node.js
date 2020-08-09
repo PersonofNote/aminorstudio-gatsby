@@ -12,7 +12,7 @@ const projectTemplate = path.resolve(`./src/templates/project-page.js`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
       node,
@@ -27,7 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
             frontmatter {
@@ -54,7 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
   */
 
 
-  result.data.allMarkdownRemark.edges.forEach((edge) => {
+  result.data.allMdx.edges.forEach((edge) => {
     if (edge.node.frontmatter.posttype === 'project') {
       createPage({
         path: edge.node.fields.slug,

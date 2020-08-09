@@ -14,7 +14,7 @@ const tags = ['all','javascript', 'react', 'php', 'github', 'laravel', "heroku",
 
 const ProjectsPage = props => {
   const { data } = props
-  const allPosts = data.allMarkdownRemark.edges
+  const allPosts = data.allMdx.edges
 
   const emptyQuery = ""
 
@@ -27,7 +27,7 @@ const ProjectsPage = props => {
     const query = event.target.value
     const { data } = props
 
-    const posts = data.allMarkdownRemark.edges || []
+    const posts = data.allMdx.edges || []
 
     const filteredData = posts.filter(post => {
       const { description, title, tags } = post.node.frontmatter
@@ -97,7 +97,7 @@ export default ProjectsPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(projects)/"  }}, sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMdx(filter: {fileAbsolutePath: {regex: "/(projects)/"  }}, sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id

@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 
 const PostsPage = props => {
   const { data } = props
-  const allPosts = data.allMarkdownRemark.edges
+  const allPosts = data.allMdx.edges
 
   const emptyQuery = ""
 
@@ -22,7 +22,7 @@ const PostsPage = props => {
     const query = event.target.value
     const { data } = props
 
-    const posts = data.allMarkdownRemark.edges || []
+    const posts = data.allMdx.edges || []
 
     const filteredData = posts.filter(post => {
       const { title, tags } = post.node.frontmatter
@@ -74,7 +74,7 @@ export default PostsPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(posts)/"  }}, sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMdx(filter: {fileAbsolutePath: {regex: "/(posts)/"  }}, sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
