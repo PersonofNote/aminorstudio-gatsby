@@ -13,7 +13,7 @@ Note: This article has been reposted from a Tumblr I had in 2017
 
 Writing about game development from the beginning of a short project seems like a good idea. So let’s dive right in.
 
-image
+![Flight Physics](../../images/post-images/flight-physics-1.gif)
 This month I’m working on a small game about a paper airplane. I didn’t want to go the Flappy clone route – instead I wanted to utilize tilt controls, and experiment with capturing the feeling of flying an unusual aircraft in 2-d space.
 
 The basics are pretty simple: the tilt of the phone affects movement along the y axis. Tilt right to move down, tilt left to move up. 
