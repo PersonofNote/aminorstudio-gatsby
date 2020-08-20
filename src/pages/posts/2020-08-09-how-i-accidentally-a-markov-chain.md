@@ -1,6 +1,6 @@
 ---
 posttype: post
-date: 2020-08-12
+date: 2020-08-09
 author: A Person of Note
 title: How I Accidentally a Markov Chain
 published: true
@@ -14,3 +14,4 @@ tags: [game development, programming, art, design]
 
 ---
 
+A few years ago, I wanted to build a completely atmospheric game that had shades of survival, farming and general sims. You can read about the concept here, but the main thing was that I wanted 

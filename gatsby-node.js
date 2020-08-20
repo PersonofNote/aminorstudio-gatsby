@@ -56,6 +56,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMdx.edges.forEach((edge) => {
     if (edge.node.frontmatter.posttype === 'project') {
+      console.log(edge.node.frontmatter.posttype);
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/project-post.js'),
@@ -66,6 +67,7 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       })
     }else{
+    console.log(edge.node.frontmatter.posttype);
     createPage({
       path: edge.node.fields.slug,
       component: path.resolve(`./src/templates/blog-post.js`),

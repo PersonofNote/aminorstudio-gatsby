@@ -7,12 +7,9 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
 
-const components = {
-  h2: () => (<span>Boo!</span>),
-}
-
 
 export default ({ data }) => {
+  console.log(data); // WHY DOES PUTTING IN A CONSOLE.LOG STATEMENT WORK
   const post = data.mdx;
   //TODO add search by tag functionality and styles to indicate tag links
   

@@ -1,6 +1,6 @@
 ---
 posttype: post
-date: 2019-12-21
+date: 2019-02-17
 author: A Person of Note
 title: Animated Map with D3js
 published: true
