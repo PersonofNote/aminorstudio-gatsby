@@ -14,10 +14,11 @@ const ClientsList =  ( props )  => {
             <section 
                 className="client-section"
                 style={{
-                    transitionDelay: `${index * 75}ms`
+                    transitionDelay: `${index * 75}ms`,
+                    paddingBottom: `2rem`,
             }}>
            
-                <a href={client.client.link} >
+                <a href={client.client.link} target="_blank" >
                     <img src={require(`../images/${client.client.image}`)} title={client.client.name} alt={client.client.name} className="client-logo"></img>
                 </a>
             </section>

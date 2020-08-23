@@ -22,6 +22,7 @@ const ProjectsPage = props => {
     filteredData: [],
     query: emptyQuery,
   })
+  
   // Extract to reusable component
   const handleInputChange = event => {
     const query = event.target.value

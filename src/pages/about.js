@@ -41,7 +41,7 @@ const clientsList = [
     client: {
       "name": "Comcast Xfinity",
       "image": "comcast-xfinity-logo.jpg",
-      "link": "https://www.sho.com/"
+      "link": "https://corporate.comcast.com/"
     }
   },
   {
@@ -123,9 +123,19 @@ const AboutPage = () =>{
  
   <Layout>
     <SEO title="About" />
-    <h2> Clients </h2>
+    <section class="about-me" style={{
+          paddingBottom: `2rem`,
+    }}>
+    <h1> About Me </h1>
+    <p> I'm a self-taught feral developer with a classical music background. I transitioned into coding from music by way of freelance writing, with a few
+      stops as bartender, river rafting gear manufacturer, and art/tech-collective co-founder. Always looking for the next cool thing to learn about.
+    </p>
+    </section>
+    <h2 style={{
+          paddingBottom: `2rem`,
+    }}> Clients </h2>
     <ClientsList clients={clientsList} />
-    <h2>Tech</h2>
+    <h2>Tech I Use</h2>
     <section className="section-tech">
       <div className="tech">
         <h3> Javascript </h3>
@@ -165,7 +175,6 @@ const AboutPage = () =>{
           <IconHeroku/>
       </div>
     </section>
-
      
   </Layout>
 )
