@@ -80,6 +80,20 @@ module.exports = {
         ],
       },
     },
+    /*
+    {
+      resolve: `gatsby-remark-interactive-gifs`,
+      options: {
+        root: `${__dirname}`,
+        src: `${__dirname}/src/images/post-images/gifs`,
+        dest: `${__dirname}/public/static/gifs`,
+        play: `${__dirname}/src/images/post-images/gifs/world-test.gif`,
+        placeholder: `${__dirname}/src/images/post-images/gifs/world-test.gif`,
+        loading: `${__dirname}/src/images/post-images/gifs/world-test.gif`,
+        relativePath: `/static/gifs`
+      },
+    },
+    */
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

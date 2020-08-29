@@ -8,6 +8,7 @@ coverImage: ../../images/self-portrait-photo.jpg
 tags: [machine learning, fastai]
 ---
 
+
 This is part of a series of articles covering [fast.ai's](https://www.fast.ai/) machine learning course. Part notes, part review, part process writeup, mostly for me, but also for anyone who's interested.
 
 ## Why am I doing this?

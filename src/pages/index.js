@@ -15,7 +15,11 @@ const IndexPage = () => (
       height: `65vh`
     }}>
       <div id="intro-image"></div>
-      <p className="center">Full-stack developer specializing in thoughtful, interactive user experiences.</p>
+      <p  style={{
+      maxWidth: `750px`,
+      margin: `auto`,
+      paddingBottom: `1rem`
+    }} className="center">Full-stack developer specializing in thoughtful, interactive user experiences, weird game development, and a dash of mad (computer) science</p>
       <div className="front-page-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a></div>
     </div>
   </Layout>
