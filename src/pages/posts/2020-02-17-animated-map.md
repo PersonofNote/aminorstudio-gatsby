@@ -1,12 +1,14 @@
 ---
 posttype: post
-date: 2019-02-17
+date: 2020-02-17
 author: A Person of Note
 title: Animated Map with D3js
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
+components: ""
 tags: [personal, introduction]
 ---
+
 
 You know how when you're working on a big project it's easy to procrastinate? Especially if you're hitting a long or slow part? Well, I try to recognize that urge as an indicator that I need to take a break, but I also try to procrastinate by doing something else in the same vein so that I'm not completely switching  gears. In this case, that meant taking a quick break from some full-stack work to do a couple of fun map animations with [d3.js](https://d3js.org/)
 

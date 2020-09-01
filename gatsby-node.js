@@ -5,7 +5,16 @@
  */
 
 const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem")
+const { createFilePath } = require("gatsby-source-filesystem");
+
+// gatsby-node.js
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
+  })
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -44,6 +53,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
             frontmatter {
               posttype
+              components
             }
           }
         }

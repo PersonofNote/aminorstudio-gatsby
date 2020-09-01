@@ -39,7 +39,8 @@ export default function PostTemplate({ data }) {
         <div style={{
           display: `flex`,
           flexDirection: `row`,
-          justifyContent: `flex-start`
+          justifyContent: `flex-start`,
+          flexWrap: `wrap`
           }}> Tagged: {tagList}</div>
       </div>
       </Layout>

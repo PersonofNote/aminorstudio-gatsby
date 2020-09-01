@@ -5,6 +5,7 @@ author: A Person of Note
 title: Focus-Within for Accessibility
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
+components: ""
 tags: [css, tips, tricks, accessibility, web development]
 ---
 

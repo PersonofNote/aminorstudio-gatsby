@@ -5,6 +5,7 @@ author: A Person of Note
 title: An AI on a Lonely Island
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
+components: ""
 tags: [game development, programming, art, design, conceptual]
 ---
 

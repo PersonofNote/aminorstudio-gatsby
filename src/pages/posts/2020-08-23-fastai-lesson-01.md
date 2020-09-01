@@ -5,6 +5,7 @@ author: A Person of Note
 title: I want to teach robots to love, but first I have to teach them to recognize cats (Fast AI Course Lesson 1)
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
+components: ""
 tags: [machine learning, fastai]
 ---
 

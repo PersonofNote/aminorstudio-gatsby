@@ -5,6 +5,7 @@ author: A Person of Note
 title: Approaches to Procedural Challenge Generation
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
+components: ""
 tags: [ game development, art, design]
 ---
 
@@ -13,6 +14,9 @@ tags: [ game development, art, design]
 *The game itself is available [on Google Play](https://play.google.com/store/apps/details?id=com.AMinorStudio.Flight_of_the_Paperwing&hl=en_US) for the curious*
 
 ---
+
+<div style="margin:auto;width:100%;max-width:500px;height:0;padding-bottom:55%;position:relative;"><iframe src="https://giphy.com/embed/kZL0x1hBrGMWmw3RYU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
 
 ![Flight of the Paperwing Screenshot](../../images/post-images/procedural-generation-1.png)
 
@@ -67,5 +71,6 @@ To accomplish this, I have the challenge floor value. The target challenge may n
 The second time this cycle runs, when upcurve is set to false, the target difficulty will still rapidly decrease over time. There will still be a largely empty screen of breathing room and things to collect. But when upcurve is set back to true, the target difficulty will be 2 instead of 1. The next time the cycle repeats, it will be 3, and so on, increasing over time. Until it hits a cap, of course, otherwise the game will crash eventually.
 
 I'm probably way over-explaining myself here. And there's a lot of tweaking left to do. But it's a pretty solid solution so far.
+
 
   

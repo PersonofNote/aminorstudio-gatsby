@@ -5,6 +5,7 @@ author: A Person of Note
 title: How I Accidentally Invented a Markov Chain
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
+components: ""
 tags: [game development, programming, art, design]
 ---
 

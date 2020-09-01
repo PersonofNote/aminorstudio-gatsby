@@ -5,6 +5,7 @@ author: A Person of Note
 title: A Lot of Leaves Look the Same to Me, But Not to my Robot (Fast AI Course Lesson 2)
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
+components: ""
 tags: [machine learning, fastai]
 ---
 
@@ -95,7 +96,9 @@ My final categories are:
 
 In contrast to v3, this lesson didn't use fit_one_cycle. Not sure why, just found it mildly interesting.
 
-Anyway, I fired up my cnn_learner and showed it a bunch of plants. Fastai sort of hand-waves this part for now, but I think that's part of the top-down approach.
+Anyway, I fired up my cnn_learner and showed it a bunch of plants. Fastai sort of hand-waves this part for now, but I think that's part of the top-down approach. It's basically just instantiating an object with parameters, which will be familiar to anyone who's been programming for a bit. Personally, I'm itching to build the object itself... but I think this is probably a good lesson for me, who really struggled to learn how to implement libraries because I just wanted to do everything myself. The whole point of machine learning is to not have to code the whole universe yourself, and to do work that no single human can do. 
+
+So, trusting that process, I fired up my cnn_learner and showed it a bunch of plants.
 
 Annnd...
 
@@ -162,18 +165,27 @@ Setting up a gui in the notebook is surprisingly straightforward. There are a lo
 
 It was at this point, when I was about to upload a single picture of poison ivy and ask my model to classify it for me, that I realized something incredible. Something that, if you're reading this, you probably already noticed. Something that I cannot believe I overlooked.
 
-I actually somehow forgot to include actual poison ivy in the training. Supposedly the entire point of the exercise. That is amazing.
+I actually somehow forgot to include actual poison ivy in the training. Nominally the entire point of the exercise. The McGuffin that launched this quest, however flimsy. That is amazing.
 
-Rather than go back and redo this entire process to correct that, I decided to resign myself to my shame and just have a model that is good at telling virginia creeper from raspberries. I am going to blame this on the fact that I am currently working full time as well as well as taking a couple of classes at a university, and subsequently am often working on machine learning pretty late at night. But rest assured, there was a lot of face palming.
+Rather than go back and redo this entire process to correct that, I decided to resign myself to my shame and just have a model that is good at telling virginia creeper from raspberries. I am going to blame this on the fact that I am currently working full time as well as well as taking a couple of classes at a university, and subsequently am often working on machine learning very late at night. But rest assured, my face now has a semi-permanent imprint of my palm.
 
 ----------------------------
 
-*Anyway*.
+*Anyway*
 
 ![Classification gui result](../../images/post-images/fastai-2-9.png)
 
 Not bad, not bad! (I scrolled allll the way to the bottom of Google images for this one to find an image that the model hasn't seen before.)
 
-Turns out there's a whole thing called voila that does most of the processing for you, and renders the jupyter notebook as an app, with the widgets. So that's cool.
+For production, it turns out there's a whole thing called voila that does most of the processing for you, and renders the jupyter notebook as an app, with the widgets. So that's cool. It's also not quite as interesting to me because a huge chunk of my day job is to make guis for large companies. When I literally spent the day coding a bunch of forms for Showtime rebate packages, I'm not quite as jazzed about hooking up more buttons and forms, you know? So with that excuse (and because it doesn't even know what poison ivy looks like) I haven't chosen to deploy my model on Binder. But I have every intention of doing so in the future, once I get a better/more interesting model. 
 
-I haven't chosen to deploy my model on Binder, but I have every intention of doing so in the future, once I get a better model going. For now I think I've learned and practiced what I need to for this lesson, and will continue with the rest of lesson 3 next week!
+For now I think I've learned and practiced what I need to for this lesson, and will continue with the rest of lesson 3 next week!
+<div style="height: 50px"> </div>
+------------------------
+***Further Reading***
+
+[Think Stats](https://greenteapress.com/wp/think-stats-2e/)
+
+[The Problem With P Values](https://towardsdatascience.com/the-problem-with-p-values-f056245f78a3)
+
+
