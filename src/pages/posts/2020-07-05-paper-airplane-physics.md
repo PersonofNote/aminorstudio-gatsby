@@ -5,9 +5,7 @@ author: A Person of Note
 title: Paper Airplane Flight Physics
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
-components: {
-    videos: { [../../images/self-portrait-photo.jpg, ]
-}
+components: ""
 tags: [css, tips, tricks, accessibility, web development]
 ---
 
