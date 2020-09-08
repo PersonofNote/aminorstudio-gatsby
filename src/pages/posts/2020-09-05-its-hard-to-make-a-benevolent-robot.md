@@ -2,7 +2,7 @@
 posttype: post
 date: 2020-09-05
 author: A Person of Note
-title: It's Hard to Make a Benevolent Robot, But at Least We've Known That for Over 2000 Years (Fast AI Course Lesson 3)
+title: It's Hard to Make a Benevolent Robot, But at Least We've Known That for Over 2000 Years (Fast AI Course Lesson 3, Part 1)
 published: false
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
@@ -39,10 +39,13 @@ I appreciate the emphasis on testing, refining, and rolling features out slowly 
 I'm really happy and encouraged to see these ideas becoming codified into the literature of learning, and I look forward to continuing this course.
 
 
-
-Recommended Reading:
+<div style="height: 50px"> </div>
+------------------------
+***Further Reading***
 
 [*Building Machine Learning Powered Applications: Going from Idea to Product*](https://www.amazon.com/Building-Machine-Learning-Powered-Applications/dp/149204511X)
 
 [*To Predict and Serve*](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2016.00960.x)
+
+[*The Republic*](http://classics.mit.edu/Plato/republic.html)
 
