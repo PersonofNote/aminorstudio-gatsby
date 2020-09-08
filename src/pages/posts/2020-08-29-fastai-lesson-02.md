@@ -179,7 +179,8 @@ Not bad, not bad! (I scrolled allll the way to the bottom of Google images for t
 
 For production, it turns out there's a whole thing called voila that does most of the processing for you, and renders the jupyter notebook as an app, with the widgets. So that's cool. It's also not quite as interesting to me because a huge chunk of my day job is to make guis for large companies. When I literally spent the day coding a bunch of forms for Showtime rebate packages, I'm not quite as jazzed about hooking up more buttons and forms, you know? So with that excuse (and because it doesn't even know what poison ivy looks like) I haven't chosen to deploy my model on Binder. But I have every intention of doing so in the future, once I get a better/more interesting model. 
 
-For now I think I've learned and practiced what I need to for this lesson, and will continue with the rest of lesson 3 next week!
+For now I think I've learned and practiced what I need to for this lesson, and will continue with the rest of lesson 3 next week.
+
 <div style="height: 50px"> </div>
 ------------------------
 ***Further Reading***
