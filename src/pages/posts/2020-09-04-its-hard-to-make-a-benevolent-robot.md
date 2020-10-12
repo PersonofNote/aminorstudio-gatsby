@@ -3,7 +3,7 @@ posttype: post
 date: 2020-09-05
 author: A Person of Note
 title: It's Hard to Make a Benevolent Robot, But at Least We've Known That for Over 2000 Years (Fast AI Course Lesson 3)
-published: false
+published: true
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
 tags: [machine learning, fastai]
@@ -45,4 +45,3 @@ Recommended Reading:
 [*Building Machine Learning Powered Applications: Going from Idea to Product*](https://www.amazon.com/Building-Machine-Learning-Powered-Applications/dp/149204511X)
 
 [*To Predict and Serve*](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2016.00960.x)
-
