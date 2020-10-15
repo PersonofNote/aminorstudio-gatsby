@@ -1,15 +1,14 @@
 import React from "react"
 
-import { useRef, useEffect, useState, setInterval} from "react"
+import { useRef, useEffect, useState} from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import useInterval from "../components/useInterval"
 
 import GraphHex from "../components/icon-components/graphHex"
 
-import rd3 from 'react-d3-library'
-
-const RD3Component = rd3.Component;
+import * as d3 from "d3";
 
 const generateDataset = () => (
     Array(10).fill(0).map(() => ([
@@ -20,28 +19,32 @@ const generateDataset = () => (
 
 
 const DataVizPage = () => {
-    
-    const [dataset, setDataset] = useState(
-      generateDataset()
-    )
-
-
-    return (
-        <Layout>
-        <div>
-          <GraphHex />
-            <svg viewBox="0 0 100 50">
-                {dataset.map(([x, y], i) => (
-                <circle
-                    cx={x}
-                    cy={y}
-                    r="3"
-                />
-                ))}
-            </svg>
-        </div>
-        </Layout>
-    )
+  const ref = useRef()
+  useEffect(() => {
+    const xScale = d3.scaleLinear()
+      .domain([0, 100])
+      .range([10, 290])
+    const yScale = d3.scaleLinear()
+      .domain([0,100])
+      .range([0,100])
+    const svgElement = d3.select(ref.current)
+    const xAxis = d3.axisBottom(xScale)
+    const yAxis = d3.axisLeft(yScale)
+    console.log(yAxis)
+    svgElement.append("g")
+    .call(yAxis)
+    svgElement.append("g")
+      .call(xAxis)
+  }, [])
+  return (
+    <div style={{
+      paddingLeft: `2rem`,
+  }}>
+    <svg
+      ref={ref}
+    />
+    </div>
+  )
   }
 
   export default DataVizPage

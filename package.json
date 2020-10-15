@@ -7,6 +7,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
     "@mdx-js/react": "^1.6.16",
+    "d3": "^6.2.0",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-google-analytics": "^2.3.1",
