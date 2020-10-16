@@ -18,7 +18,7 @@ coverImage: ../../images/reactwp.png
 icons:
     - { icon: github, link: https://github.com/PersonofNote/wp-react-demo, tooltip: "See the code on Github" }
     - { icon: react, link: "https://www.react.com", tooltip: "Built with React" }
-    - { icon: worpdress, link: "https://www.wordpress.org", tooptip: "Powered by Wordpress" }
+    - { icon: wordpress, link: "https://www.wordpress.org", tooptip: "Powered by Wordpress" }
 visible: True
 date: 2020-02-05
 tags: [on-github, react, javascript, wordpress, api, design, d3, single-page app, spa]

@@ -143,6 +143,7 @@ const AboutPage = () =>{
           <IconReact/>
           <IconD3/>
           <IconGatsby/>
+          <IconNode fill="none"/>
       </div>
       <div className="tech">
         <h3> HTML/CSS </h3>
