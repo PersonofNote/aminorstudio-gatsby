@@ -30,4 +30,16 @@ I have grouped these two games together because they are essentially the same ga
 ![Penny Dreadful Cover](../../images/penny-cover.png) ![Penny Dreadful Map](../../images/penny-map.png)
 
 
+These Showtime activities feature:
+
+- An emphasis on user engagement
+- Data collection for sweepstakes
+
+
+And were built with: 
+- PHP and Laravel
+- jQuery
+- Bootstrap
+- MySQL
+
      

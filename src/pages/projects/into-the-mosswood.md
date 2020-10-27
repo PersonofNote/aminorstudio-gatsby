@@ -28,3 +28,10 @@ I did all of the coding, asset generation, sound design and level design. Each o
 The story is not as clear as I would like; if I revisit this project in the future, it will be to greatly expand the map and the world. But for a first project, I am satisfied with how it came out.
 
 Fun fact: In this RPG, there are only two NPCs; one of them is a pig. A friend who was playing the game tried to talk to the pig, and somehow talking to the pig four times skipped him ahead to the ending, thus resulting in my first-ever speed run.
+
+Into the Mosswood features:
+
+- Two endings
+- A dialog system with simple branching
+- Novel mechanics that I haven't seen elsewhere
+- Original art and music as well as code

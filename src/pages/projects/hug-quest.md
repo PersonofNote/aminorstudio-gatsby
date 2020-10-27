@@ -27,3 +27,17 @@ The premise of the game is simple. Two players, or a player and a simple AI, are
 The AI utilizes a simple A* algorithm combined with a basic Markov chain to control the desire to change directions, and wanders around aimlessly. Because it is not actively looking for the human player, I chose to make the AI a cat instead of a person. However, the cat does turn into a human when the win condition is satisfied; I considered drawing a new set of sprites/animation, but I liked the idea that you're looking for your friend who has been cursed to be a cat for reasons unknown.
 
 It turned out to not be all that fun to actually play, so I stopped development, but it was never intended to be a commercial enterprise. It is available for download on itch.io for demonstration purposes.
+
+Hug Quest features:
+
+* Procedurally generated levels
+* Map and compass
+* A* pathfinding
+* Original art as well as code
+* Animations and design that caused testers to audibly "awww" at
+
+And was built with:
+
+* GameMaker
+* Aseprite
+* Ableton Live

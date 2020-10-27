@@ -32,3 +32,16 @@ I designed and created all of the assets, mechanics and code for this project.
 Ultimately, the non-standard movement controls are a bit of a gimmick, but they did achieve the feeling of piloting a paper plane.
 
 Flight of the Paperwing is avaiable for download on the Google Play Store.
+
+Flight of the Paperwing features:
+
+* Procedural generation
+* Bespoke easing functions
+* Original art and music as well as code
+* Persistent data such as high score
+
+And was built with:
+
+* GameMaker
+* Aseprite
+* Ableton Live

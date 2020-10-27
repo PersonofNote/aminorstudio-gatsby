@@ -22,3 +22,18 @@ tags: [javascript, html, css, php, wordpress, web development, front end develop
 ---
 
 The Association of Home Appliance Manufacturers had a blog that simply showed the most recent posts in chronological order. They recieved a site with great expanded functionality and a much greater emphasis on images. The site is built in line with aham.org's branding, implemented from provided static mockups.
+
+The updated blog site features:
+
+- Customizable carousels
+- Tag cloud filtering
+- Related posts and subscription CTA in every article (no dead ends)
+- A greater emphasis on sharability
+
+And was built with: 
+- PHP
+- Wordpress RESTful API
+- LESS, following the [BEM](http://getbem.com/naming/) naming convention 
+- Tailwind.js
+- jQuery
+- Webpack/Babel

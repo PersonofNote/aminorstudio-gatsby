@@ -1,0 +1,28 @@
+---
+# SCHEMA:
+#   - project:
+#      title:
+#      image:
+#      description:
+#      coverImage
+#      icons:
+#        - {icon, link, tooltip}
+#      visible: bool
+#      date: Consider removing this...
+#      tags: []
+posttype: project
+title: Flask-based Macro Tracker
+slug: /flask-tracker
+description: Full-stack IIFYM tracker
+coverImage: ../../images/reactwp.png
+icons:
+    - { icon: github, link: https://github.com/PersonofNote/wp-react-demo, tooltip: "See the code on Github" }
+    - { icon: react, link: "https://www.react.com", tooltip: "Built with React" }
+visible: False
+date: 2020-10-25
+tags: [on-github, react, javascript, flask, api, design, spa]
+---
+    
+I couldn't find a good-looking, easy-to-use, not-weight-obsessed macro tracker, so I built one that I wanted to use. The number on the scale is just one point in a whole picture of health, but as a society we (especially women) seem to still have the conditioning to be obsessed with that number. But I find that I perform and feel the best when I am taking more holistic approach.
+
+The app is currently in the 1.0 stage. The next feature will be the ability to store foods and quickly select them with an autofill. I also plan to add jwt authentication if anyone else expresses interest in using the app.

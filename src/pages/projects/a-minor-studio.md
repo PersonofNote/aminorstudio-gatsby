@@ -30,3 +30,16 @@ I built this website in part to practice modern cloud deployment and to learn Gr
 It took me a little while to wrap my head around GraphQL versus the REST API I am familiar with. Throughout this project I have come to appreciate the granularity of control that GraphQL gives me, and am excited to keep using it in future projects.
 
 I chose to deploy the site on AWS rather than Netlify, Heroku, Github pages or something similar because I am currently teaching myself AWS and continous cloud deployment, and would prefer to work in an environment that is similar to something I would see in a large-scale deployment scenario.
+
+This site features:
+
+* Custom design and styles
+* A unique scrolling menu treatment
+* Custom svg icon component system
+* Hand-built animations
+
+This site was built with:
+
+* Gatsby/React
+* GraphQL
+* MDX

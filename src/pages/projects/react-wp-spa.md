@@ -25,3 +25,14 @@ tags: [on-github, react, javascript, wordpress, api, design, d3, single-page app
 ---
     
 This React SPA utilizes Wordpress as a CMS/backend. I wrote a simple theme using React Router that can pull from an arbitrary Wordpress site. I also added support for D3 data visualizations, to practice utilizing the library in React.
+
+This SPA features:
+- Modern, decoupled frontend with familiar back end
+- Clean, minimalist extensible design
+- Bespoke styling
+
+And was built with: 
+- React (Create React App)
+- React-Router
+- D3.js
+- Wordpress RESTful API
