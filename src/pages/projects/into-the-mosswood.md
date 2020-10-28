@@ -35,3 +35,10 @@ Into the Mosswood features:
 - A dialog system with simple branching
 - Novel mechanics that I haven't seen elsewhere
 - Original art and music as well as code
+
+
+And was built with:
+
+* GameMaker
+* Aseprite
+* Ableton Live
