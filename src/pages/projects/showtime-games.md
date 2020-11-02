@@ -22,12 +22,11 @@ tags: [laravel, html, css, javascript, php,]
 ---
 
 ![Billions map](billions-map.png)
-This project was two branded sweepstakes games in association with Showtime, Comcast Xfinity, and other clients. The games are full-stack Laravel apps where a user clicks on the appropriate location on the map according to provided hints in order to enter a sweepstakes. I mostly did front end on this project; some of the infrastructre was carried over from other projects, and the only backend work I did involved setting up my local database and hooking up a couple of new routes.
+<div style="height: 2rem"></div>
+This project was two branded sweepstakes games in association with Showtime, Comcast Xfinity, and other clients. The games are full-stack Laravel apps with Blade templating, where a user clicks on the appropriate location on the map according to provided hints in order to enter a sweepstakes. The user data is collected in a MySql database. A correct location is rewarded with a gif from the show and the next piece of the story; an incorrect guess elicits increasingly clear but snarky hints.
 
 
 I have grouped these two games together because they are essentially the same game, but there were a few interesting differences in ending presentation and logic, such as one game having an extra reward screen and the other having two endings.
-
-![Penny Dreadful Cover](../../images/penny-cover.png) ![Penny Dreadful Map](../../images/penny-map.png)
 
 
 These Showtime activities feature:
@@ -42,4 +41,13 @@ And were built with:
 - Bootstrap
 - MySQL
 
-     
+  
+ ![Penny Dreadful Cover](../../images/penny-cover.png) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ![Penny Dreadful Map](../../images/penny-map.png)
