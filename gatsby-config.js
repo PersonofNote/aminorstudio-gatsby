@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `A Minor Studio`,
@@ -18,9 +22,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-posthog-analytics`,
       options: {
-        trackingId: "UA-165733204-1",
+        // Specify the API key for your Posthog Project (required)
+        apiKey: process.env.POSTHOG_API_KEY,
+	    // Specify the app host if self-hosting (optional, default: https://app.posthog.com)
+	    apiHost: "https://aminorstudio-analytics.herokuapp.com/",
+        // Puts tracking script in the head instead of the body (optional, default: true)
+        head: true,
+	    // Enable posthog analytics tracking during development (optional, default: false)
+	    isEnabledDevMode: true
       },
     },
     {

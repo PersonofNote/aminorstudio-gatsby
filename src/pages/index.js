@@ -8,6 +8,7 @@ import IconGithub from "../components/icon-components/IconGithub"
 import IconTwitter from "../components/icon-components/IconTwitter"
 import IconLinkedIn from "../components/icon-components/IconLinkedIn"
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -21,7 +22,7 @@ const IndexPage = () => (
       paddingBottom: `1rem`
     }} className="center">Full-stack developer specializing in thoughtful, interactive user experiences, weird game development, and a dash of mad (computer) science</p>
       <div className="front-page-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a></div>
-    </div>
+    </div> 
   </Layout>
 )
 
