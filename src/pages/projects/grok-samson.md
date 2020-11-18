@@ -17,6 +17,7 @@ description: Slack Bot integrating Google docs into a QA workflow
 coverImage: ../../images/brock.jpg
 icons:
     - { icon: django, link: "https://www.django.com", tooltip: "Built with Django" }
+    - { icon: slack, link: "https://www.slack.com", tooltip: "Built for Slack" }
 visible: True
 date: 2020-01-15
 tags: [python, google-docs, api, fullstack]

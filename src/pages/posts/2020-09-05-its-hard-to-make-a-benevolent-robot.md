@@ -3,7 +3,7 @@ posttype: post
 date: 2020-09-05
 author: A Person of Note
 title: It's Hard to Make a Benevolent Robot, But at Least We've Known That for Over 2000 Years (Fast AI Course Lesson 3, Part 1)
-published: false
+published: true
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
 tags: [machine learning, fastai]

@@ -3,7 +3,7 @@ import React from 'react';
 export default function IconLock(){
    return(
        <div>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;">
             <image style="overflow:visible;enable-background:new    ;" width="384" height="512" id="Lock" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAIACAYAAACLn7v6AAAW6UlEQVR4nO3df6he9X0H8M9tE03T
             pHEu/6Rl0BHIYCADLZkdFV3cLg4s1ro/1tH+PZC2WMoCuq1J/likjrJiRRjbfy20jLUS6piwmRmU
             VaTxD/0vILR/WKETMdOm1mubcXK/Jz6557nJfe59nnu+53xeL7g0Pc81eZ5zzvN9f3+fpeXl5YCB

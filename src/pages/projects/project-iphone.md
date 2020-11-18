@@ -15,7 +15,7 @@ slug: /iphone-11
 description: Front-end development for the iPhone-11 launch
 coverImage: ../../images/iphone-11-invite.jpg
 icons:
-      - { icon: "", link: "", tooltip: "" }
+      - { icon: "lock", link: "", tooltip: "Under NDA" }
 visible: True
 date: 2019-09-10
 tags: [css, html, javascript]

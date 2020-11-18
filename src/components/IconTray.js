@@ -13,6 +13,8 @@ import IconItchIo from "../components/icon-components/IconItchIo"
 import IconAWS from "../components/icon-components/IconAWS"
 import IconLink from "../components/icon-components/IconLink"
 import IconGraphQL from "../components/icon-components/IconGraphQL"
+import IconDjango from "../components/icon-components/IconDjango"
+import IconSlack from "../components/icon-components/IconSlack"
 
 const IconTray = ({ icons }) => 
 {
@@ -30,7 +32,10 @@ const IconTray = ({ icons }) =>
         "itchio": <IconItchIo/>,
         "aws": <IconAWS/>,
         "link": <IconLink/>,
-        "graphql": <IconGraphQL/>
+        "graphql": <IconGraphQL/>,
+        "django": <IconDjango/>,
+        "slack": <IconSlack/>
+
     }
     const Iconset = icons.map(icon => 
                 <div key={icons.indexOf(icon)} className='icon-wrap'>
