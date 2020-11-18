@@ -27,6 +27,11 @@ import IconPython from "../components/icon-components/IconPython"
 import IconAWS from "../components/icon-components/IconAWS"
 import IconGoogleCloud from "../components/icon-components/IconGoogleCloud"
 import IconGatsby from "../components/icon-components/IconGatsby"
+import IconMaterial from "../components/icon-components/IconMaterial"
+import IconFlask from "../components/icon-components/IconFlask"
+import IconESLint from "../components/icon-components/IconESLint"
+import IconJupyter from "../components/icon-components/IconJupyter"
+import IconVue from "../components/icon-components/IconVue"
 
 
 const clientsList = [
@@ -143,19 +148,20 @@ const AboutPage = () =>{
           <IconReact/>
           <IconD3/>
           <IconGatsby/>
-          <IconNode fill="none"/>
+          <IconVue/>
       </div>
       <div className="tech">
-        <h3> HTML/CSS </h3>
-          <IconHTML/>
-          <IconCSS3/>
+        <h3> CSS Frameworks </h3>
           <IconBootstrap/>
           <IconTailwind/>
+          <IconMaterial/>
       </div>
       <div className="tech">
         <h3> Python </h3>
           <IconPython/>
+          <IconJupyter/>
           <IconDjango/>
+          <IconFlask/>
       </div>
       <div className="tech">
         <h3> PHP </h3>
@@ -168,6 +174,7 @@ const AboutPage = () =>{
           <IconWebpack/>
           <IconSass/>
           <IconApache/>
+          <IconESLint/>
       </div>
       <div className="tech">
         <h3> Cloud Deployment </h3>

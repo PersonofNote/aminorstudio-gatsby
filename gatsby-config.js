@@ -25,9 +25,8 @@ module.exports = {
       resolve: `gatsby-plugin-posthog-analytics`,
       options: {
         // Specify the API key for your Posthog Project (required)
-        apiKey: process.env.POSTHOG_API_KEY,
-	    // Specify the app host if self-hosting (optional, default: https://app.posthog.com)
-	    apiHost: "https://aminorstudio-analytics.herokuapp.com/",
+        apiKey: "Ae3QIy6kOd0VStoibjSGqN2yQW0DM03We4c3oe7i5B8",
+
         // Puts tracking script in the head instead of the body (optional, default: true)
         head: true,
 	    // Enable posthog analytics tracking during development (optional, default: false)

@@ -19,6 +19,9 @@ import "./layout.css"
 import "./styles.css"
 import "./header.less"
 
+//import posthog from 'posthog-js';
+//posthog.init('btpeYhapj5ZqiaNlJBzXk3ohnhRAxrgyHtwBdSNH-7s', {api_host: 'https://aminorstudio-analytics.herokuapp.com'});
+
 const mainMenulinks = [
   {
     "link": "/about",
@@ -46,6 +49,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
 
   return (
     <>

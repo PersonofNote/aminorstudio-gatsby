@@ -5,7 +5,8 @@ import MenuLinks from "./MenuLinks"
 import siteLogo from "../images/logo.png"
 import IconArrow from "../components/icon-components/IconArrow.js"
 
-
+import posthog from 'posthog-js';
+posthog.init('btpeYhapj5ZqiaNlJBzXk3ohnhRAxrgyHtwBdSNH-7s', {api_host: 'https://aminorstudio-analytics.herokuapp.com'});
 
 const Header = (props) => {
   const [scrolling, setScrolling] = useState(false);
