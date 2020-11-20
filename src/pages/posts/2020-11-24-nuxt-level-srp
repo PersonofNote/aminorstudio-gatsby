@@ -1,0 +1,13 @@
+---
+posttype: post
+date: 2020-11-24
+author: A Person of Note
+title: NUXT-Level SRP
+published: true
+coverImage: ../../images/self-portrait-photo.jpg
+components: ""
+tags: [nuxt-js, vue, javascript, single responsibility principle ]
+---
+
+My last post was about math, and then I stopped posting! It's not because I got scared off by the math, but because I got called back in to the office and the commute means I have about 2.5 fewer hours in my day. I do plan to get back to exploring machine learning, but in the meantime I wanted to talk about Nuxt.js, a Vue framework that does static site deployment.
+
