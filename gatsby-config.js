@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-plugin-posthog-analytics`,
       options: {
         // Specify the API key for your Posthog Project (required)
-        apiKey: "Ae3QIy6kOd0VStoibjSGqN2yQW0DM03We4c3oe7i5B8",
+        apiKey: "W_ugphxsf7H_eM-SNcrQQFe8wOC2z-5mA-fcxJ0XNmU",
 
         // Puts tracking script in the head instead of the body (optional, default: true)
         head: true,

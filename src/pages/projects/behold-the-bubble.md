@@ -15,7 +15,7 @@ slug: /behold-the-bubble
 description: Simple News App designed to juxtapose headlines with different biases. May load slowly due to free hosting tier.
 coverImage: ../../images/comparative-news-app.png
 icons:
-    - { icon: "zeit", link: "https://csb-48mr22qly0-dzwnnqsnfo.now.sh/", tooltip: "See on Zeit" }
+    - { icon: "zeit", link: "https://csb-48mr22qly0-dzwnnqsnfo.now.sh/", tooltip: "Zeit has shut down" }
     - { icon: "react", link: "https://react.com/", tooltip: "Built with React" }
     - { icon: "github", link: "https://github.com/PersonofNote/behold-the-bubble", tooltip: "See the code on Github" }
 visible: True
