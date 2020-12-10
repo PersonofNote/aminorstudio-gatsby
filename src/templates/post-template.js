@@ -10,8 +10,7 @@ const shortcodes = { Link }
 export default function PostTemplate({ data }) {
   if (typeof(data) !== 'undefined'){
     const mdx = data.mdx;
-    console.log("Post:")
-    console.log(mdx.frontmatter.title);
+ 
 
     const tagList = mdx.frontmatter.tags.map(tag => 
           <span className="post-tag" style={{

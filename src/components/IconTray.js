@@ -15,6 +15,8 @@ import IconLink from "../components/icon-components/IconLink"
 import IconGraphQL from "../components/icon-components/IconGraphQL"
 import IconDjango from "../components/icon-components/IconDjango"
 import IconSlack from "../components/icon-components/IconSlack"
+import IconVue from "../components/icon-components/IconVue"
+import IconNuxt from "../components/icon-components/IconNuxt"
 
 const IconTray = ({ icons }) => 
 {
@@ -34,7 +36,9 @@ const IconTray = ({ icons }) =>
         "link": <IconLink/>,
         "graphql": <IconGraphQL/>,
         "django": <IconDjango/>,
-        "slack": <IconSlack/>
+        "slack": <IconSlack/>,
+        "vue":<IconVue/>,
+        "nuxt":<IconNuxt/>
 
     }
     const Iconset = icons.map(icon => 

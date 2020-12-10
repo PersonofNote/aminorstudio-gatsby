@@ -10,8 +10,7 @@ const shortcodes = { Link }
 export default function ProjectTemplate({ data }) {
   if (typeof(data) !== 'undefined'){
   const mdx = data.mdx;
-  console.log("Project:")
-  console.log(mdx.frontmatter.title);
+
   return (
     <Layout>
     {/* <Img className="featured-post-image" fluid={post.frontmatter.coverImage.childImageSharp.fluid} /> */}

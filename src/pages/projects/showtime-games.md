@@ -29,7 +29,9 @@ This project was two branded sweepstakes games in association with Showtime, Com
 
 I have grouped these two games together because they are essentially the same game, but there were a few interesting differences in ending presentation and logic, such as one game having an extra reward screen and the other having two endings.
 
-![Penny Dreadful Cover](../../images/penny-cover.png) ![Penny Dreadful Map](../../images/penny-map.png)
+| | 
+|:-------------------------:|:-------------------------:|
+| <img alt="Multiple-choice question" src="../../images/penny-cover.png"/>| <img alt="Drag and drop question" src="../../images/penny-map.png"/>
 
 
 These Showtime activities feature:
@@ -43,5 +45,6 @@ And were built with:
 - jQuery
 - Bootstrap
 - MySQL
+
 
      

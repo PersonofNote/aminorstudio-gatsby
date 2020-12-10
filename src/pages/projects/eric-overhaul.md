@@ -12,7 +12,7 @@
 posttype: project
 title: ERIC Website Overhaul
 slug: /eric-website-overhaul
-description: Was the lead developer on a ground-up makeover for the ERISA committee's ERIC organization.
+description: Ground-up makeover for the ERISA committee's ERIC organization.
 coverImage: ../../images/eric-splash.PNG
 icons:
      - { icon: link, link: "https://eric.org", tooltip: "Explore the site" }

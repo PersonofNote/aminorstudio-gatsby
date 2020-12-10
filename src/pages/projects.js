@@ -10,7 +10,7 @@ import "../components/projects.less"
 
 
 
-const tags = ['all','javascript', 'react', 'php', 'github', 'laravel', "heroku", "googleplay", "games", "design", "art"]
+const tags = ['all','javascript', 'react', 'php', 'github', 'laravel', "heroku", "googleplay", "games", "design", "art", "mysql"]
 
 const ProjectsPage = props => {
   const { data } = props
@@ -76,7 +76,7 @@ const ProjectsPage = props => {
               classNames={"fade"}
             >
             <div className="project-card">
-            <Img className="project-image" fluid={edge.node.frontmatter.coverImage.childImageSharp.fluid} />
+            {edge.node.frontmatter.coverImage.childImageSharp && <Img className="project-image" fluid={edge.node.frontmatter.coverImage.childImageSharp.fluid} />}
             <ProjectContent key={posts.indexOf(edge)} content={edge.node} ></ProjectContent>
             </div>
             </CSSTransition>
