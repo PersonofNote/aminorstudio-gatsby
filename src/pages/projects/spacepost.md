@@ -16,13 +16,13 @@ slug: /spacepost
 description: Co-founded an art/tech collective housed in the WNDO space in Venice Beach
 coverImage: ../../images/project-images/spacepost/spacepost-2.jpg
 icons:
-    - { icon: github, link: https://github.com/PersonofNote/wp-react-demo, tooltip: "See the code on Github" }
+    - { }
 visible: True
 date: 2017-05-05
 tags: [ art, technology, venice beach, spacepost, cofounder, hackerspace]
 ---
     
-In 2017 I co-founded Spacepost, an art/tech collective and hackerspace, with Stanley Bishop. We started off doing virtual reality in an easy-up on the Venice Beach boardwalk before moving into the WNDO space, owned by longtime resident and artist Jim Budman. 
+In 2017 I co-founded [Spacepost](spacepost.io), an art/tech collective and hackerspace, with Stanley Bishop. We started off doing virtual reality in an easy-up on the Venice Beach boardwalk before moving into the WNDO space, owned by longtime resident and artist Jim Budman. 
 
 Through 2018 I developed branding, did web development and assisted in hobby data science projects, and helped build out the space and run locally-focused events, including:
 
@@ -37,6 +37,7 @@ I remain involved in the space in an unofficial capacity. Mostly notably, in 201
 
 The space continues to be a thriving space for STE(A)M advocacy and support, as well as holding events to support the local Venice Beach community.
 
+[Read more about Spacepost and its community](https://sundayscaries.substack.com/p/spacepost?fbclid=IwAR1FTvtXxOb14l9gy1QjLaIJfKPsI8-kbRepaFXRXjkhGTJn5Jfk5L2Gj3Q)
 
 
 | | 
