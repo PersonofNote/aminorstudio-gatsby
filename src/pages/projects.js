@@ -15,6 +15,7 @@ const tags = ['all','javascript', 'react', 'php', 'github', 'laravel', "heroku",
 const ProjectsPage = props => {
   const { data } = props
   const allPosts = data.allMdx.edges
+  console.log(allPosts)
 
   const emptyQuery = ""
 
