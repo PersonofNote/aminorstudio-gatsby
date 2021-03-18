@@ -4,6 +4,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import ShareLinks from "../components/ShareList"
 
 const shortcodes = { Link }
 
@@ -11,6 +12,10 @@ export default function PostTemplate({ data }) {
   if (typeof(data) !== 'undefined'){
     const mdx = data.mdx;
  
+    var shareURL = "/"
+    if (typeof window !== `undefined`) {
+      shareURL = window.location;
+    }
 
     const tagList = mdx.frontmatter.tags.map(tag => 
           <span className="post-tag" style={{
@@ -35,6 +40,10 @@ export default function PostTemplate({ data }) {
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
+        <div style={{
+
+        }}>
+        </div>
         <div style={{
           display: `flex`,
           flexDirection: `row`,

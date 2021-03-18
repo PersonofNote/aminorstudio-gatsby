@@ -6,7 +6,7 @@ title: Animated Map with D3js
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
-tags: [personal, introduction]
+tags: [javascript, d3, d3.js, maps, design, frontend]
 ---
 
 

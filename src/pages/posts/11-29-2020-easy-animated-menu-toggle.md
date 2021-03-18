@@ -6,7 +6,7 @@ title: Easy Animated Menu Toggle for a Little Something Extra
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
-tags: [css, javascript, design ]
+tags: [css, javascript, design, frontend ]
 ---
 
 This week I thought I'd quickly share a little snippet of code that I've found to be low effort but high impact: A mobile menu treatment that animates between 3 horizontal lines and an X on click. 

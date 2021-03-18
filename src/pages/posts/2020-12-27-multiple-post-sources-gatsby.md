@@ -3,7 +3,7 @@ posttype: post
 date: 2020-12-22
 author: A Person of Note
 title: Rendering from Multiple Post Sources in React/Gatsby
-published: true
+published: false
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
 tags: [wordpress, aws, deployment, webflow, cms, gatsby, javascript, react ]

@@ -1,0 +1,56 @@
+---
+posttype: post
+date: 2021-02-14
+author: A Person of Note
+title: Gatsby Share Links
+published: true
+coverImage: ../../images/self-portrait-photo.jpg
+components: ""
+tags: [gatsby, javascript, react, design]
+---
+
+# Gatsby Share Links
+
+
+
+You may or may not have seen [Responsible Share Links](https://jonsuh.com/blog/social-share-links/). 
+From the article:
+
+> Social share scripts are convenient and easy to copy & paste but rely on JavaScript and add additional overhead to your site, which > means more HTTP requests and slower load times. Instead, use share links that don’t require you to load scripts for each social site.
+
+Sounds good to me! I'm a big fan of implementing simple components myself anyway, rather than loading a million libraries. So I wrote a React component to add share links to the upcoming website overhaul of Spacepost.io.
+
+```
+  const [popup, setPopup] = useState({
+    url: ""
+  })
+
+  function windowPopup(e) {
+    let screenSize = getWindowDimensions();
+    var width = screenSize.width/2;
+    var height = screenSize.height/2;
+      e.preventDefault();
+      console.log(e.currentTarget.getAttribute('href'))
+      var url = e.currentTarget.getAttribute('href')
+      setPopup(url)
+    
+      var left = (screenSize.width / 2) - (width / 2),
+        top = (screenSize.height / 2) - (height / 2);  
+      window.open(
+        url,
+        "",
+        "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
+      );
+  }
+
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+
+```
+
+
