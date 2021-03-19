@@ -7,6 +7,7 @@
     --secondary: #315d7b;
     --secondary-light: #99b7de;
     --secondary-dark: #505fab;
+    --background: white;
 }
 
 
@@ -38,6 +39,7 @@
 
 body {
     color: var(--text);
+    background-color: var(--background)
 }
 
 
@@ -93,6 +95,14 @@ main {
     margin-bottom: 1rem;
 }
 
+button {
+    border: 2px solid var(--primary);
+    background: none !important;
+    border-radius: 12px;
+    color: var(--text);
+    padding: 0.3rem;
+}
+
 footer {
     border-top: 1px solid gray;
 }
@@ -114,6 +124,21 @@ footer {
 .footer-icons svg:hover {
     fill: var(--primary);
     transition: all 250ms;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form.comment-form {
+    max-width: 50%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+form.comment-form button {
+    max-width: 75px;
 }
 
 /* Animations */

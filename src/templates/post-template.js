@@ -5,6 +5,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import ShareLinks from "../components/ShareList"
+import CommentsForm from "../components/CommentsForm"
 
 const shortcodes = { Link }
 

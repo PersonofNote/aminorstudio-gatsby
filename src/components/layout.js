@@ -19,6 +19,8 @@ import "./layout.css"
 import "./styles.css"
 import "./header.less"
 
+import { Link } from "gatsby"
+
 //import posthog from 'posthog-js';
 //posthog.init('btpeYhapj5ZqiaNlJBzXk3ohnhRAxrgyHtwBdSNH-7s', {api_host: 'https://aminorstudio-analytics.herokuapp.com'});
 
@@ -71,7 +73,7 @@ const Layout = ({ children }) => {
           padding: `0.8rem`,
           justifyContent: `flex-start`
         }}>
-          © {new Date().getFullYear()} A Minor Studio <div className="footer-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a></div>
+          © {new Date().getFullYear()} A Minor Studio <div className="footer-icons"><a href="https://github.com/PersonofNote"><IconGithub/></a> <a href="https://www.linkedin.com/in/jessica-lee-taylor-martin/"><IconLinkedIn/></a><a href="https://twitter.com/Person_of_note"><IconTwitter/></a> </div>
         </footer>
       </div>
     </>

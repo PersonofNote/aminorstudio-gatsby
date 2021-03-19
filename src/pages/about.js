@@ -133,7 +133,10 @@ const AboutPage = () =>{
     }}>
     <h1> About Me </h1>
     <p> I'm a self-taught feral developer with a classical music background. I transitioned into coding from music by way of freelance writing, with a few
-      stops as bartender, river rafting gear manufacturer, and art/tech-collective co-founder. Always looking for the next cool thing to learn about.
+      stops as bartender, river rafting gear manufacturer, and art/tech-collective co-founder. Currently a Senior Integrations Engineer at CBS. 
+      </p>
+    <p>
+      Always looking for the next cool thing to learn about.
     </p>
     </section>
     <h2 style={{

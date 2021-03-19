@@ -1,6 +1,6 @@
 ---
 posttype: post
-date: 2021-02-14
+date: 2021-03-18
 author: A Person of Note
 title: Gatsby Share Links
 published: true

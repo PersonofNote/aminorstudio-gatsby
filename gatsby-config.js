@@ -18,7 +18,8 @@ module.exports = {
       options: {
         bucketName: "aminorstudio.com",
         protocol: "https",
-        hostname: "aminorstudio.com"
+        hostname: "aminorstudio.com",
+        acl: null
       },
     },
     {
