@@ -1,6 +1,6 @@
 ---
 posttype: post
-date: 2021-03-18
+date: 2021-03-27
 author: A Person of Note
 title: Gatsby Share Links
 published: true
@@ -9,10 +9,11 @@ components: ""
 tags: [gatsby, javascript, react, design, quick tips, component, frontend]
 ---
 
-You may or may not have seen [Responsible Share Links](https://jonsuh.com/blog/social-share-links/). 
+You may or may not have come across the idea of [Responsible Share Links](https://jonsuh.com/blog/social-share-links/). 
 From the article:
 
-> "Social share scripts are convenient and easy to copy & paste but rely on JavaScript and add additional overhead to your site, which > means more HTTP requests and slower load times. Instead, use share links that don’t require you to load scripts for each social site."
+> "Social share scripts are convenient and easy to copy & paste but rely on JavaScript and add additional overhead to your site, which 
+> means more HTTP requests and slower load times. Instead, use share links that don’t require you to load scripts for each social site."
 
 Sounds good to me! I'm a big fan of implementing simple components myself anyway, rather than loading a million libraries. So I wrote a quick React component to add share links to the upcoming website overhaul of Spacepost.io.
 

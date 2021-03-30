@@ -36,8 +36,11 @@ export default function PostTemplate({ data }) {
           >{mdx.frontmatter.title}
         </h1>
         <span style={{
+          color: `gray`
+        }}>{mdx.frontmatter.date}</span>
+        <p style={{
           color: `gray`,
-          }}>{mdx.timeToRead}-minute read</span>
+          }}>{mdx.timeToRead}-minute read</p><br/>
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
@@ -73,6 +76,7 @@ export const postQuery = graphql`
       frontmatter {
         title
         tags
+        date(formatString: "LL")
       }
     }
   }
