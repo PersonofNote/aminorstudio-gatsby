@@ -68,20 +68,27 @@ const ContactPage = () => {
             <div style={{
             height: `65vh`
             }}>
-              <form name="contact" method="POST" data-netlify="true">
-                <p>
-                    <label>Your Name: <input type="text" name="name" /></label>   
-                </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
+                <form onSubmit={handleSubmit}>
+                    <label>
+                    First name
+                    <input
+                        type="text"
+                        name="firstName"
+                        value={state.firstName}
+                        onChange={handleInputChange}
+                    />
+                    </label>
+                    <label>
+                    Last name
+                    <input
+                        type="text"
+                        name="lastName"
+                        value={state.lastName}
+                        onChange={handleInputChange}
+                    />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
                 { 
                     formSubmitted && <h2>Thank you!</h2>
                 }

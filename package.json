@@ -27,6 +27,7 @@
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.3.7",
     "less": "^3.11.1",
+    "pg": "^8.5.1",
     "posthog-js": "^1.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

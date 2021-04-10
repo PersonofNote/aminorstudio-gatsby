@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import ShareLinks from "../components/ShareList"
 import CommentsForm from "../components/CommentsForm"
+import Comments from "../components/Comments"
 
 const shortcodes = { Link }
 
@@ -48,6 +49,7 @@ export default function PostTemplate({ data }) {
 
         }}>
         </div>
+        <Comments />
         <div style={{
           display: `flex`,
           flexDirection: `row`,
