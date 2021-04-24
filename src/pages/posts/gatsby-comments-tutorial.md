@@ -2,7 +2,7 @@
 posttype: post
 date: 2021-04-14
 author: A Person of Note
-title: Adding Comments to Gatsby (Or Whatever)
+title: Introducing, Comments!
 published: true
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
@@ -78,6 +78,9 @@ Which would technically work, and for the number of comments I'm expecting, migh
 I hadn't worked with PostgreSQL at all before this, and I like it! That being said...
 Always remember to end your statements with a semicolon. This is obvious, I know. But I kept forgetting to do it when creating/dropping/modifying database tables, so I'm pretending that this is a perfectly normal problem to have and reminding you, the reader, as well. Thank you for your indulgence on this matter.
 
+
+
+### Gotchas 
 
 
 

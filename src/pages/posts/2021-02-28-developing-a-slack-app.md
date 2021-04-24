@@ -3,7 +3,7 @@ posttype: post
 date: 2021-02-14
 author: A Person of Note
 title: Developing a Slack App
-published: true
+published: false
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
 tags: [javascript, bolt, slack, slack development, design, development, node.js]

@@ -49,7 +49,7 @@ export default function PostTemplate({ data }) {
 
         }}>
         </div>
-        <Comments />
+        <CommentsForm />
         <div style={{
           display: `flex`,
           flexDirection: `row`,

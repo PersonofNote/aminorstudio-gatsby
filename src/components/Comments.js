@@ -12,7 +12,7 @@ function Comments(props) {
     setPage(page + 1);
   };
 
-  const show_length = 4
+  const show_length = 25
 
   useEffect(() => {
     fetch(
@@ -25,8 +25,6 @@ function Comments(props) {
       .then(response => {
         setComments(response);
         setIsLoading(false);
-        console.log(comments)
-        console.log(comments.length)
       })
       .catch(error => console.log(error))
   }, [page]);
@@ -40,8 +38,13 @@ function Comments(props) {
         <div key={index}>
           {c && (
             <>
-              <div>
-                { c.text } {c.post_date}
+              <div style={{
+                display: `flex`,
+                flexDirection: `column`
+              }}>
+              <div><strong>{c.author}</strong></div>
+              <div>{ c.text } </div>
+              <span style={{color: `grey`, fontSize:`0.8rem`}}> posted on {new Date(c.post_date).toLocaleDateString()}</span>
               </div>
               <hr />
             </>
