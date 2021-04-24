@@ -24,7 +24,6 @@ const ContactPage = () => {
         setState({
             [name]: value,
         })
-        console.log(state)
     }
 
     const formURL = 'https://egwnethmxc.execute-api.us-east-1.amazonaws.com/Prod/submitForm';

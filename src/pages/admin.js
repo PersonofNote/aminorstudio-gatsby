@@ -13,9 +13,7 @@ const Admin = () => {
     const submit = e => {
         e.preventDefault()
         setPassword(e.target.value)
-        console.log(password)
         const response_body = ({password})
-        console.log(JSON.stringify(response_body))
         fetch(
             `https://aminorstudio-api.herokuapp.com/admin`,
             {
