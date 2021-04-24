@@ -10,8 +10,8 @@
 #            link:
 #            tooltip:
 posttype: project
-title: Static Stretching App
-slug: /static-stretching-app
+title: Comments System
+slug: /express-comments
 description: Express comments system for this site
 coverImage: ../../images/logo.png
 icons:
