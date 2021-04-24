@@ -3,7 +3,12 @@ import React, { useState, useEffect } from "react";
 
 function AllComments(props) {
   // For paginating later
-  const slug = window.location.pathname.split('/')[3]
+  let slug
+  if (typeof window !== `undefined`) {
+    slug = window.location.pathname.split('/')[3]
+  }else{
+    slug = ""
+  }
   const [page, setPage] = useState(1);
   const [comments, setComments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

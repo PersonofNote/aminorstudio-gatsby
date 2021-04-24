@@ -4,10 +4,11 @@ import Comments from "./Comments"
 
 
 const CommentsForm =  ( props )  => {
+  let posted_to
   if (typeof window !== `undefined`) {
-    const posted_to = window.location.pathname.split('/')[3]
+    posted_to = window.location.pathname.split('/')[3]
   }else{
-    const posted_to = ""
+    posted_to = ""
   }
   const [author, setAuthor] = useState('')
   const [text, setText] = useState('')

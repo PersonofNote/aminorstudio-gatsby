@@ -10,7 +10,7 @@ import "../components/projects.less"
 
 
 
-const tags = ['all','javascript', 'react', 'php', 'github', 'laravel', "heroku", "googleplay", "games", "design", "art", "mysql", "python"]
+const tags = ['all','javascript', 'react', 'php', 'github', 'laravel', "heroku", "googleplay", "games", "design", "art", "mysql", "python", "postgresql", "personal", "slack"]
 
 const ProjectsPage = props => {
   const { data } = props

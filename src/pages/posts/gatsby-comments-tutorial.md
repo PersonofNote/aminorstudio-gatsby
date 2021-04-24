@@ -3,7 +3,7 @@ posttype: post
 date: 2021-04-14
 author: A Person of Note
 title: Introducing, Comments!
-published: true
+published: false
 coverImage: ../../images/self-portrait-photo.jpg
 components: ""
 tags: [gatsby, javascript, react, design, tutorial, component, frontend]

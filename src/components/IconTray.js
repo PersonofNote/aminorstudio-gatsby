@@ -17,6 +17,8 @@ import IconDjango from "../components/icon-components/IconDjango"
 import IconSlack from "../components/icon-components/IconSlack"
 import IconVue from "../components/icon-components/IconVue"
 import IconNuxt from "../components/icon-components/IconNuxt"
+import IconNode from "../components/icon-components/IconNode"
+import IconPostgres from "../components/icon-components/IconPostgres"
 
 const IconTray = ({ icons }) => 
 {
@@ -38,7 +40,9 @@ const IconTray = ({ icons }) =>
         "django": <IconDjango/>,
         "slack": <IconSlack/>,
         "vue":<IconVue/>,
-        "nuxt":<IconNuxt/>
+        "nuxt":<IconNuxt/>,
+        "node": <IconNode />,
+        "postgres": <IconPostgres/>
 
     }
     const Iconset = icons.map(icon => 
