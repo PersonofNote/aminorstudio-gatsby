@@ -26,6 +26,7 @@ module.exports = {
       resolve: `gatsby-plugin-posthog-analytics`,
       options: {
         apiKey: "W_ugphxsf7H_eM-SNcrQQFe8wOC2z-5mA-fcxJ0XNmU",
+        apiHost: "https://aminorstudio-analytics.herokuapp.com/",
         head: true,
 	      isEnabledDevMode: true
       },
