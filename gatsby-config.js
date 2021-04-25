@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-posthog-analytics`,
       options: {
-        apiKey: process.env.POSTHOG_API_KEY,
+        apiKey: "W_ugphxsf7H_eM-SNcrQQFe8wOC2z-5mA-fcxJ0XNmU",
         head: true,
 	      isEnabledDevMode: true
       },
