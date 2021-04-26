@@ -1,6 +1,6 @@
 ---
 posttype: post
-date: 2021-04-14
+date: 2021-04-25
 author: A Person of Note
 title: Implementing Project Cards in Gatsby
 published: true
