@@ -39,7 +39,6 @@ const CommentsForm =  ( props )  => {
       body: JSON.stringify(response_body)
     }).then(res => res.json())
     .then(response => {
-      console.log(response)
       if(response.errors) {
         let arr = []
         for (let i = 0; i < response.errors.length; i++){
@@ -79,7 +78,7 @@ const CommentsForm =  ( props )  => {
         flexDirection: `row`,
         padding: `1rem 0`}}>
         <label> Name</label>
-        <input style={{width: `70%`}} value={author} onChange={e => {console.log(author); setAuthor(e.target.value)}} type="text" name="user_name"/>
+        <input style={{width: `70%`}} value={author} onChange={e => setAuthor(e.target.value)} type="text" name="user_name"/>
         </div>
         <div style={{display: `flex`,
         flexDirection: `row`}}>

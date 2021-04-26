@@ -19,11 +19,9 @@ const ShareLinks = (props) => {
     let screenSize = getWindowDimensions();
     var width = screenSize.width/2;
     var height = screenSize.height/2;
-    console.log(width)
     // Only show popup on larger screens
     if (screenSize.width > 750){
       e.preventDefault();
-      console.log(e.currentTarget.getAttribute('href'))
       var url = e.currentTarget.getAttribute('href')
       setPopup(url)
     
