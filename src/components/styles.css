@@ -4,7 +4,7 @@
     --primary: #ffab47;
     --primary-light: #ffe357;
     --text: #3e272b;
-    --secondary: #315d7b;
+    --secondary: #1981ff;
     --secondary-light: #99b7de;
     --secondary-dark: #505fab;
     --background: white;
@@ -139,6 +139,22 @@ form.comment-form {
 
 form.comment-form button {
     max-width: 75px;
+}
+
+.link-button {
+    padding: 0.5rem;
+    border: 2px solid var(--primary);
+    border-radius: 16px;
+    display: flex;
+    align-content: center
+}
+
+.link-button:hover{
+    background-color: var(--secondary-light);
+}
+
+.link-button .icon:hover{
+    fill: var(--secondary);
 }
 
 /* Animations */

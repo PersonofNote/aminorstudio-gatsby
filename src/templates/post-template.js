@@ -4,9 +4,9 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import ShareLinks from "../components/ShareList"
 import CommentsForm from "../components/CommentsForm"
 import Comments from "../components/Comments"
+import ShareLinks from "../components/ShareLinks"
 
 const shortcodes = { Link }
 
@@ -50,6 +50,7 @@ export default function PostTemplate({ data }) {
         }}>
         </div>
         <CommentsForm />
+       {/* <ShareLinks path={shareURL} text={mdx.frontmatter.title} /> */}
         <div style={{
           display: `flex`,
           flexDirection: `row`,
