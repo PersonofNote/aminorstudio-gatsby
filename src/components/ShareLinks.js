@@ -1,8 +1,8 @@
 import React from 'react';
 //import InstagramIcon from "../images/icons/instagram.inline.svg";
-import TwitterIcon from "./icon-components/IconTwitter";
-import FacebookIcon from "./icon-components/IconFacebook";
-import RedditIcon from "./icon-components/IconReddit";
+//import TwitterIcon from "./icon-components/IconTwitter";
+//import FacebookIcon from "./icon-components/IconFacebook";
+//import RedditIcon from "./icon-components/IconReddit";
 import { useState, useEffect } from 'react';
 //import { ReactComponent as InstagramIcon } from '../images/icons/instagram.svg';
 
@@ -61,6 +61,7 @@ const ShareLinks = (props) => {
       margin: `2rem 0`,
     }}>
      <div className="front-page-icons"> 
+     {/*
         <a className="link-button" onClick={windowPopup} href={twitterLink}
     target="_blank" rel="noopener noreferrer" alt="Share on Twitter"> <TwitterIcon /> </a> 
       <a className="link-button" onClick={windowPopup} href={fbLink}
@@ -69,6 +70,7 @@ const ShareLinks = (props) => {
       target="_blank" rel="noopener noreferrer">
           <RedditIcon/>
       </a>
+     */}
       </div>
     </div>
     </>
