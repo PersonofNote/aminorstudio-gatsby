@@ -9,10 +9,10 @@ const Admin = () => {
     const [password, setPassword] = useState("")
     const [update, setUpdate] = useState()
     const [authed, setAuthed] = useState(false)
-
+    
     const submit = e => {
         e.preventDefault()
-        setPassword(e.target.value)
+        //setPassword(e.target.value)
         const response_body = ({password})
         fetch(
             `https://aminorstudio-api.herokuapp.com/admin`,

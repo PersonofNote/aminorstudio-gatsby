@@ -22,6 +22,7 @@ module.exports = {
         acl: null
       },
     },
+    /*
     {
       resolve: `gatsby-plugin-posthog-analytics`,
       options: {
@@ -31,6 +32,7 @@ module.exports = {
 	      isEnabledDevMode: true
       },
     },
+    */
     {
       resolve: "svg-react-loader",
       options: {

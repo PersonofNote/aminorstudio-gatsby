@@ -12,7 +12,9 @@ tags: [javascript, react, design, tutorial, frontend, backend]
 
 -----
 
-Now that I've got a basic design and roadmap sketched out and we've made a really basic front end, it's time to set up the API. For this project I've chosen to use Express just to keep in all in Javascript. If you're a little bit more familiar with the process, you could easily substitute another framework like Flask, Django, Laravel to write in whatever language you like.
+Now that I've got a basic design and roadmap sketched out and we've made a really basic front end, it's time to set up the API. For this project I've chosen to use Express just to keep in all in Javascript. If you're a little bit more familiar with the process, you could easily substitute another framework like Flask, Django, Laravel to write in whatever language you like, but this will be node/express specific.
+
+
 
 
 
