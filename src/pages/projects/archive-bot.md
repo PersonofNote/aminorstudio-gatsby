@@ -10,8 +10,8 @@
 #            link:
 #            tooltip:
 posttype: project
-title:  ViacomCBS Archive Bot for Slack
-slug: /cbs-archive-bot
+title:  Archive Bot for Slack
+slug: /archive-bot
 description: Bot that allows users to archive channels, but protects certain keywords and channels from being archived
 coverImage: ../../images\project-images\archive-bot\archive-bot-icon.png
 icons:
@@ -22,9 +22,9 @@ date: 2021-06-10
 tags: [javascript, slack, programming, slack bolt, slack app, slack bot]
 ---
 
-Before I arrived at CBS, there were many incidents of Slack channels being mistakenly or incorrectly archived, to the point where archiving was restricted to admins only. However, this led to a huge number of requests and admin time being spent on archiving channels for users.
+When you get beyond a certain number of users in Slack, it's really easy for Slack channels to be mistakenly or incorrectly archived. One solution is to turn off archiving for everyone but admins, but this can lead to a huge number of requests and admin time being spent on archiving channels for users.
 
-Ultimately we needed a Slack Bot that would allow users to archive channels while being able to restrict/protect a list. Since Slack does not have that functionality, we built an app for that.
+Ultimately it would be nice to allow users to archive channels while being able to restrict/protect a list. Since Slack does not have that functionality, I helped build an app for that.
 
 This bot features:
 - The ability to archive channels via a shortcut, a slash command, or a message that simply says "archive"
@@ -39,7 +39,5 @@ And was built with:
 - The Slack Bolt framework
 
 
-| | 
-|:-------------------------:|:-------------------------:|
-| <img width="1604" alt="Gallery and site" src="../../images/project-images/archive-bot/bot-docs.png"/>  |  <img width="1604" alt="Colorful NFT" src="../../images/project-images/archive-bot/bot-dms.png"/>
+
 
