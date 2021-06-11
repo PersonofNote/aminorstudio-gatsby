@@ -16,14 +16,14 @@ description: Mixed-reality NFT Gallery popup in Venice Beach, CA
 coverImage: ../../images/project-images/brightmoments-popup/art-website.jpg
 icons:
     - { icon: "gatsby", link: "https://www.gatsbyjs.com/", tooltip: "Built with Gatsby" }
-    - { icon: "node", link: "https://nodejs.org/en/", tooltip: "Built with Node" }
+    - { icon: "express", link: "http://expressjs.com/", tooltip: "Built with ExpressJS" }
     - { icon: "postgres", link: "https://www.postgresql.org/", tooltip: "Built with PostgreSQL" }
 visible: true
 date: 2021-05-06
-tags: [javascript, react, programming, full-stack, express, nft, art]
+tags: [javascript, react, programming, full-stack, express, nft, art, postgresq]
 ---
 
-I am a founding member of the Brightmoments DAO, and built the first iteration of [Brightmoments.io](https://brightmoments.io/) for the popup gallery. I worked from Figma wireframes and built the website and the api that synchs among the website and three screens displaying featured NFTs in the physical gallery.
+I am a founding member of the Brightmoments DAO, and built the first iteration of [Brightmoments.io](https://brightmoments.io/) for the popup gallery. I worked from Figma wireframes and built the website and the api that synchs among the website and three screens displaying featured NFTs in the physical gallery. The screens show the full-resolution, uninterrupted images, while the site displays more information such as the title, the artist, and a link to bid on or purchase the NFT.
 
 [Read about the popup on Decrypt](https://decrypt.co/68536/bright-moments-nft-art-installation-is-bringing-the-venice-ca-counter-culture-into-web-3-0) and check out the [Instagram](https://www.instagram.com/brightmomentsgallery/)
 

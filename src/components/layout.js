@@ -21,8 +21,6 @@ import "./header.less"
 
 import { Link } from "gatsby"
 
-//import posthog from 'posthog-js';
-//posthog.init('btpeYhapj5ZqiaNlJBzXk3ohnhRAxrgyHtwBdSNH-7s', {api_host: 'https://aminorstudio-analytics.herokuapp.com'});
 
 const mainMenulinks = [
   {
